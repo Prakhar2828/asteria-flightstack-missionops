@@ -1,0 +1,127 @@
+{
+  "timestamp_utc": "2026-11-08T16:41:33.119644+00:00",
+  "base_url": "http://127.0.0.1:8080",
+  "checks": [
+    {
+      "name": "asset /",
+      "passed": true
+    },
+    {
+      "name": "asset /app.js",
+      "passed": true
+    },
+    {
+      "name": "asset /style.css",
+      "passed": true
+    },
+    {
+      "name": "security headers",
+      "passed": true
+    },
+    {
+      "name": "unauthenticated status",
+      "passed": true
+    },
+    {
+      "name": "path traversal denied",
+      "passed": true
+    },
+    {
+      "name": "cross-origin mutation denied",
+      "passed": true
+    },
+    {
+      "name": "invalid seed",
+      "passed": true
+    },
+    {
+      "name": "invalid role",
+      "passed": true
+    },
+    {
+      "name": "session observer",
+      "passed": true
+    },
+    {
+      "name": "BOOT role observer",
+      "passed": true
+    },
+    {
+      "name": "control role observer",
+      "passed": true
+    },
+    {
+      "name": "fault role observer",
+      "passed": true
+    },
+    {
+      "name": "journal export observer",
+      "passed": true
+    },
+    {
+      "name": "session operator",
+      "passed": true
+    },
+    {
+      "name": "BOOT role operator",
+      "passed": true
+    },
+    {
+      "name": "control role operator",
+      "passed": true
+    },
+    {
+      "name": "fault role operator",
+      "passed": true
+    },
+    {
+      "name": "journal export operator",
+      "passed": true
+    },
+    {
+      "name": "session administrator",
+      "passed": true
+    },
+    {
+      "name": "BOOT role administrator",
+      "passed": true
+    },
+    {
+      "name": "control role administrator",
+      "passed": true
+    },
+    {
+      "name": "fault role administrator",
+      "passed": true
+    },
+    {
+      "name": "recover",
+      "passed": true
+    },
+    {
+      "name": "resume",
+      "passed": true
+    },
+    {
+      "name": "stale quality",
+      "passed": true
+    },
+    {
+      "name": "negative step",
+      "passed": true
+    },
+    {
+      "name": "shutdown procedure",
+      "passed": true
+    },
+    {
+      "name": "journal export administrator",
+      "passed": true
+    },
+    {
+      "name": "missing page",
+      "passed": true
+    }
+  ],
+  "note": "HTTP acceptance checks; not browser rendering or interaction tests."
+}

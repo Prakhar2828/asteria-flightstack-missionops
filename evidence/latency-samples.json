@@ -1,0 +1,502 @@
+[
+  {
+    "index": 0,
+    "latency_ms": 0.07316700000004062,
+    "status": "acknowledged"
+  },
+  {
+    "index": 1,
+    "latency_ms": 0.08066699999997873,
+    "status": "acknowledged"
+  },
+  {
+    "index": 2,
+    "latency_ms": 0.07424999999994242,
+    "status": "acknowledged"
+  },
+  {
+    "index": 3,
+    "latency_ms": 0.06754099999994878,
+    "status": "acknowledged"
+  },
+  {
+    "index": 4,
+    "latency_ms": 0.07337500000015318,
+    "status": "acknowledged"
+  },
+  {
+    "index": 5,
+    "latency_ms": 0.07820799999991301,
+    "status": "acknowledged"
+  },
+  {
+    "index": 6,
+    "latency_ms": 0.06837500000012042,
+    "status": "acknowledged"
+  },
+  {
+    "index": 7,
+    "latency_ms": 0.07099999999993223,
+    "status": "acknowledged"
+  },
+  {
+    "index": 8,
+    "latency_ms": 0.07154200000014654,
+    "status": "acknowledged"
+  },
+  {
+    "index": 9,
+    "latency_ms": 0.07316599999995788,
+    "status": "acknowledged"
+  },
+  {
+    "index": 10,
+    "latency_ms": 0.0684170000000428,
+    "status": "acknowledged"
+  },
+  {
+    "index": 11,
+    "latency_ms": 0.0788330000001114,
+    "status": "acknowledged"
+  },
+  {
+    "index": 12,
+    "latency_ms": 0.0744169999999933,
+    "status": "acknowledged"
+  },
+  {
+    "index": 13,
+    "latency_ms": 0.07399999999990747,
+    "status": "acknowledged"
+  },
+  {
+    "index": 14,
+    "latency_ms": 0.07037499999995589,
+    "status": "acknowledged"
+  },
+  {
+    "index": 15,
+    "latency_ms": 0.08116700000004862,
+    "status": "acknowledged"
+  },
+  {
+    "index": 16,
+    "latency_ms": 0.0723750000000134,
+    "status": "acknowledged"
+  },
+  {
+    "index": 17,
+    "latency_ms": 0.08220900000011078,
+    "status": "acknowledged"
+  },
+  {
+    "index": 18,
+    "latency_ms": 0.07691600000003795,
+    "status": "acknowledged"
+  },
+  {
+    "index": 19,
+    "latency_ms": 0.08662500000000684,
+    "status": "acknowledged"
+  },
+  {
+    "index": 20,
+    "latency_ms": 0.07970799999990064,
+    "status": "acknowledged"
+  },
+  {
+    "index": 21,
+    "latency_ms": 0.0963750000000374,
+    "status": "acknowledged"
+  },
+  {
+    "index": 22,
+    "latency_ms": 0.0747500000000123,
+    "status": "acknowledged"
+  },
+  {
+    "index": 23,
+    "latency_ms": 0.08433400000007474,
+    "status": "acknowledged"
+  },
+  {
+    "index": 24,
+    "latency_ms": 0.08454199999996526,
+    "status": "acknowledged"
+  },
+  {
+    "index": 25,
+    "latency_ms": 0.09087499999993476,
+    "status": "acknowledged"
+  },
+  {
+    "index": 26,
+    "latency_ms": 0.09725000000004869,
+    "status": "acknowledged"
+  },
+  {
+    "index": 27,
+    "latency_ms": 0.0877909999998927,
+    "status": "acknowledged"
+  },
+  {
+    "index": 28,
+    "latency_ms": 0.09124999999987615,
+    "status": "acknowledged"
+  },
+  {
+    "index": 29,
+    "latency_ms": 0.09083399999987307,
+    "status": "acknowledged"
+  },
+  {
+    "index": 30,
+    "latency_ms": 0.08912499999991219,
+    "status": "acknowledged"
+  },
+  {
+    "index": 31,
+    "latency_ms": 0.08650000000010039,
+    "status": "acknowledged"
+  },
+  {
+    "index": 32,
+    "latency_ms": 0.09408300000002257,
+    "status": "acknowledged"
+  },
+  {
+    "index": 33,
+    "latency_ms": 0.08820900000006127,
+    "status": "acknowledged"
+  },
+  {
+    "index": 34,
+    "latency_ms": 0.09733300000003275,
+    "status": "acknowledged"
+  },
+  {
+    "index": 35,
+    "latency_ms": 0.09258300000003494,
+    "status": "acknowledged"
+  },
+  {
+    "index": 36,
+    "latency_ms": 0.09154200000005552,
+    "status": "acknowledged"
+  },
+  {
+    "index": 37,
+    "latency_ms": 0.09741700000009956,
+    "status": "acknowledged"
+  },
+  {
+    "index": 38,
+    "latency_ms": 0.09991700000000492,
+    "status": "acknowledged"
+  },
+  {
+    "index": 39,
+    "latency_ms": 0.09620799999998653,
+    "status": "acknowledged"
+  },
+  {
+    "index": 40,
+    "latency_ms": 0.09454099999994803,
+    "status": "acknowledged"
+  },
+  {
+    "index": 41,
+    "latency_ms": 0.10662500000013786,
+    "status": "acknowledged"
+  },
+  {
+    "index": 42,
+    "latency_ms": 0.09787500000002503,
+    "status": "acknowledged"
+  },
+  {
+    "index": 43,
+    "latency_ms": 0.11233399999999172,
+    "status": "acknowledged"
+  },
+  {
+    "index": 44,
+    "latency_ms": 0.09454200000003077,
+    "status": "acknowledged"
+  },
+  {
+    "index": 45,
+    "latency_ms": 0.09416700000008937,
+    "status": "acknowledged"
+  },
+  {
+    "index": 46,
+    "latency_ms": 0.09562499999993257,
+    "status": "acknowledged"
+  },
+  {
+    "index": 47,
+    "latency_ms": 0.10237499999998789,
+    "status": "acknowledged"
+  },
+  {
+    "index": 48,
+    "latency_ms": 0.09787500000002503,
+    "status": "acknowledged"
+  },
+  {
+    "index": 49,
+    "latency_ms": 0.10291600000011947,
+    "status": "acknowledged"
+  },
+  {
+    "index": 50,
+    "latency_ms": 0.09729199999997107,
+    "status": "acknowledged"
+  },
+  {
+    "index": 51,
+    "latency_ms": 0.10204199999996888,
+    "status": "acknowledged"
+  },
+  {
+    "index": 52,
+    "latency_ms": 0.09658299999992792,
+    "status": "acknowledged"
+  },
+  {
+    "index": 53,
+    "latency_ms": 0.0974579999999392,
+    "status": "acknowledged"
+  },
+  {
+    "index": 54,
+    "latency_ms": 0.10716699999990809,
+    "status": "acknowledged"
+  },
+  {
+    "index": 55,
+    "latency_ms": 0.1023339999999262,
+    "status": "acknowledged"
+  },
+  {
+    "index": 56,
+    "latency_ms": 0.09812500000005997,
+    "status": "acknowledged"
+  },
+  {
+    "index": 57,
+    "latency_ms": 0.09991700000000492,
+    "status": "acknowledged"
+  },
+  {
+    "index": 58,
+    "latency_ms": 0.10195899999998481,
+    "status": "acknowledged"
+  },
+  {
+    "index": 59,
+    "latency_ms": 0.10500000000002174,
+    "status": "acknowledged"
+  },
+  {
+    "index": 60,
+    "latency_ms": 0.1040410000001657,
+    "status": "acknowledged"
+  },
+  {
+    "index": 61,
+    "latency_ms": 0.10524999999983464,
+    "status": "acknowledged"
+  },
+  {
+    "index": 62,
+    "latency_ms": 0.11208399999995677,
+    "status": "acknowledged"
+  },
+  {
+    "index": 63,
+    "latency_ms": 0.11408299999993154,
+    "status": "acknowledged"
+  },
+  {
+    "index": 64,
+    "latency_ms": 0.12279099999989995,
+    "status": "acknowledged"
+  },
+  {
+    "index": 65,
+    "latency_ms": 0.12154200000003001,
+    "status": "acknowledged"
+  },
+  {
+    "index": 66,
+    "latency_ms": 0.1064170000000253,
+    "status": "acknowledged"
+  },
+  {
+    "index": 67,
+    "latency_ms": 0.10945800000006223,
+    "status": "acknowledged"
+  },
+  {
+    "index": 68,
+    "latency_ms": 0.11045799999997996,
+    "status": "acknowledged"
+  },
+  {
+    "index": 69,
+    "latency_ms": 0.11125000000000718,
+    "status": "acknowledged"
+  },
+  {
+    "index": 70,
+    "latency_ms": 0.10862499999997333,
+    "status": "acknowledged"
+  },
+  {
+    "index": 71,
+    "latency_ms": 0.10733299999987622,
+    "status": "acknowledged"
+  },
+  {
+    "index": 72,
+    "latency_ms": 0.11695800000000034,
+    "status": "acknowledged"
+  },
+  {
+    "index": 73,
+    "latency_ms": 0.10774999999996204,
+    "status": "acknowledged"
+  },
+  {
+    "index": 74,
+    "latency_ms": 0.10929199999987205,
+    "status": "acknowledged"
+  },
+  {
+    "index": 75,
+    "latency_ms": 0.11074999999993729,
+    "status": "acknowledged"
+  },
+  {
+    "index": 76,
+    "latency_ms": 0.12354199999986548,
+    "status": "acknowledged"
+  },
+  {
+    "index": 77,
+    "latency_ms": 0.11374999999991253,
+    "status": "acknowledged"
+  },
+  {
+    "index": 78,
+    "latency_ms": 0.10995899999999281,
+    "status": "acknowledged"
+  },
+  {
+    "index": 79,
+    "latency_ms": 0.11075000000015933,
+    "status": "acknowledged"
+  },
+  {
+    "index": 80,
+    "latency_ms": 0.12570799999989113,
+    "status": "acknowledged"
+  },
+  {
+    "index": 81,
+    "latency_ms": 0.12095899999997606,
+    "status": "acknowledged"
+  },
+  {
+    "index": 82,
+    "latency_ms": 0.13329199999989605,
+    "status": "acknowledged"
+  },
+  {
+    "index": 83,
+    "latency_ms": 0.12391700000002892,
+    "status": "acknowledged"
+  },
+  {
+    "index": 84,
+    "latency_ms": 0.1416670000000675,
+    "status": "acknowledged"
+  },
+  {
+    "index": 85,
+    "latency_ms": 0.11554099999999679,
+    "status": "acknowledged"
+  },
+  {
+    "index": 86,
+    "latency_ms": 0.11941700000006605,
+    "status": "acknowledged"
+  },
+  {
+    "index": 87,
+    "latency_ms": 0.12799999999990597,
+    "status": "acknowledged"
+  },
+  {
+    "index": 88,
+    "latency_ms": 0.11729100000001935,
+    "status": "acknowledged"
+  },
+  {
+    "index": 89,
+    "latency_ms": 0.152000000000152,
+    "status": "acknowledged"
+  },
+  {
+    "index": 90,
+    "latency_ms": 0.12066700000001873,
+    "status": "acknowledged"
+  },
+  {
+    "index": 91,
+    "latency_ms": 0.12479099999995746,
+    "status": "acknowledged"
+  },
+  {
+    "index": 92,
+    "latency_ms": 2.4768330000000116,
+    "status": "acknowledged"
+  },
+  {
+    "index": 93,
+    "latency_ms": 0.15591599999997818,
+    "status": "acknowledged"
+  },
+  {
+    "index": 94,
+    "latency_ms": 0.1428340000000361,
+    "status": "acknowledged"
+  },
+  {
+    "index": 95,
+    "latency_ms": 0.14312499999991068,
+    "status": "acknowledged"
+  },
+  {
+    "index": 96,
+    "latency_ms": 0.12862500000010435,
+    "status": "acknowledged"
+  },
+  {
+    "index": 97,
+    "latency_ms": 0.12291600000002845,
+    "status": "acknowledged"
+  },
+  {
+    "index": 98,
+    "latency_ms": 0.13137500000004465,
+    "status": "acknowledged"
+  },
+  {
+    "index": 99,
+    "latency_ms": 0.1335000000000086,
+    "status": "acknowledged"
+  }
+]

@@ -1,0 +1,32 @@
+name: Verify Asteria
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build and verify flight and ground software
+        run: python scripts/verify.py
+      - name: Sanitizer build
+        run: python scripts/build.py --sanitize
+      - name: Exercise sanitizers
+        run: python scripts/sanitize.py
+      - name: HTTP acceptance
+        run: |
+          python ground/server.py --port 8080 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          python scripts/http_smoke.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.os }}
+          path: evidence/

@@ -1,0 +1,95 @@
+{
+  "protocol_version": 1,
+  "commands": [
+    {
+      "name": "BOOT",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "SAFE",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "RECOVER",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "RESUME",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "PAYLOAD_ON",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "PAYLOAD_OFF",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "HEATER_ON",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "HEATER_OFF",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "ADCS_ON",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "ADCS_OFF",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "POINT",
+      "role": "operator",
+      "bounds": [
+        -180,
+        180
+      ],
+      "kind": "flight"
+    },
+    {
+      "name": "DESATURATE",
+      "role": "operator",
+      "bounds": null,
+      "kind": "flight"
+    },
+    {
+      "name": "INJECT_FAULT",
+      "role": "administrator",
+      "bounds": [
+        0,
+        5
+      ],
+      "kind": "lab"
+    },
+    {
+      "name": "CLEAR_FAULTS",
+      "role": "administrator",
+      "bounds": null,
+      "kind": "lab"
+    }
+  ]
+}

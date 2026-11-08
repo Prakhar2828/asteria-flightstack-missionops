@@ -1,0 +1,161 @@
+{
+  "protocol_version": 1,
+  "channels": [
+    {
+      "id": "time",
+      "name": "Mission elapsed time",
+      "unit": "s",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "battery_soc",
+      "name": "Battery state of charge",
+      "unit": "%",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "bus_voltage",
+      "name": "Bus voltage",
+      "unit": "V",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "solar_power",
+      "name": "Solar generation",
+      "unit": "W",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "load_power",
+      "name": "Power consumption",
+      "unit": "W",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "temperature",
+      "name": "Bus temperature",
+      "unit": "\u00b0C",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "heater",
+      "name": "Heater enabled",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "attitude",
+      "name": "Attitude angle",
+      "unit": "deg",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "angular_rate",
+      "name": "Angular rate",
+      "unit": "deg/s",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "wheel_rpm",
+      "name": "Reaction wheel",
+      "unit": "rpm",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "target_angle",
+      "name": "Pointing target",
+      "unit": "deg",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "sensor_age",
+      "name": "Sensor age",
+      "unit": "s",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "adcs_enabled",
+      "name": "ADCS enabled",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "link_connected",
+      "name": "Link connected",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "link_age",
+      "name": "Link loss duration",
+      "unit": "s",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "packets",
+      "name": "Downlink packets",
+      "unit": "count",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "payload_enabled",
+      "name": "Payload enabled",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "payload_data",
+      "name": "Payload data",
+      "unit": "MB",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "ticks",
+      "name": "Scheduler ticks",
+      "unit": "count",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "missed_deadlines",
+      "name": "Injected missed deadlines",
+      "unit": "count",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "commands_accepted",
+      "name": "Accepted onboard commands",
+      "unit": "count",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "commands_rejected",
+      "name": "Rejected onboard commands",
+      "unit": "count",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "orbit_phase",
+      "name": "Illustrative orbit phase",
+      "unit": "turn",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "sunlight",
+      "name": "In sunlight",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "healthy",
+      "name": "Recovery health gate",
+      "unit": "bool",
+      "source": "C++ simulator"
+    },
+    {
+      "id": "healthy_dwell",
+      "name": "Healthy dwell time",
+      "unit": "s",
+      "source": "C++ simulator"
+    }
+  ]
+}

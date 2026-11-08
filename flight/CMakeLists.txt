@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(AsteriaFlightStack VERSION 0.1.0 LANGUAGES CXX)
+add_executable(asteria-flight main.cpp)
+target_compile_features(asteria-flight PRIVATE cxx_std_17)
+target_compile_options(asteria-flight PRIVATE -Wall -Wextra -Wpedantic)

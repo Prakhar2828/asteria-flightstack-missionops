@@ -1,0 +1,12 @@
+{
+  "FR-01": "Only operator or administrator may issue flight commands.",
+  "FR-02": "Fault injection and clearing require administrator training role.",
+  "FR-03": "Command IDs must be unique within a run; retries never execute twice.",
+  "FR-04": "Flight commands require an available downlink/uplink.",
+  "FR-05": "Payload requires NOMINAL mode.",
+  "FR-06": "Payload requires battery \u226540%, temperature <40\u00b0C, fresh sensor, rate \u22640.5\u00b0/s.",
+  "FR-07": "Heater requires NOMINAL, battery \u226530%, temperature <15\u00b0C.",
+  "FR-08": "Recovery requires SAFE, all faults cleared, health within limits, 10 s dwell.",
+  "FR-09": "Resume requires RECOVERY and healthy spacecraft.",
+  "FR-10": "Pointing requires NOMINAL, active ADCS, valid sensor and angle in \u00b1180\u00b0."
+}

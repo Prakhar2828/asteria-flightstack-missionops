@@ -1,0 +1,49 @@
+{
+  "commission": {
+    "title": "Commission the spacecraft",
+    "steps": [
+      "BOOT",
+      "POINT",
+      "PAYLOAD_ON"
+    ]
+  },
+  "power": {
+    "title": "Recover from low power",
+    "steps": [
+      "CLEAR_FAULTS",
+      "RECOVER",
+      "RESUME"
+    ]
+  },
+  "thermal": {
+    "title": "Recover from overheating",
+    "steps": [
+      "CLEAR_FAULTS",
+      "RECOVER",
+      "RESUME"
+    ]
+  },
+  "comms": {
+    "title": "Restore communications",
+    "steps": [
+      "CLEAR_FAULTS"
+    ]
+  },
+  "attitude": {
+    "title": "Recover attitude control",
+    "steps": [
+      "CLEAR_FAULTS",
+      "DESATURATE",
+      "RECOVER",
+      "RESUME"
+    ]
+  },
+  "shutdown": {
+    "title": "Secure the spacecraft",
+    "steps": [
+      "PAYLOAD_OFF",
+      "HEATER_OFF",
+      "SAFE"
+    ]
+  }
+}

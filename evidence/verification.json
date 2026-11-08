@@ -1,0 +1,674 @@
+{
+  "schema": "asteria-verification-v1",
+  "timestamp_utc": "2026-11-08T16:41:06.856716+00:00",
+  "environment": "macOS-26.6-arm64-arm-64bit",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "source_sha256": "b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa",
+  "tests_run": 165,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 1.319609208,
+  "cases": [
+    {
+      "id": "test_flight.FlightTests.test_adcs_off_payload",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_battery_bounded",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boot",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boot_twice",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_00",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_01",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_02",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_03",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_04",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_05",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_06",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_07",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_inject_fault_08",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_point_00",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_point_01",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_point_02",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_point_03",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_point_04",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_00",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_01",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_02",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_03",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_04",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_boundary_step_05",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_different_seed_changes_noise",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_embedded_null_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_event_retention",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_0_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_1_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_2_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_3_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_4_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_5_protection",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_fault_clearing_keeps_physics",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_frame_limit",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_heater_hot_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_invalid_frame",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_invalid_seed",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_link_blocks_commands",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_link_loss_15s",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_nominal_30_minutes",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_nonzero_unused_parameter",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_orbit_wrap",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_oversized_frame_resynchronizes",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_payload_accumulates",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_point_adcs_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_point_valid",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_power_recovery",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_safe_no_payload",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_safe_sheds_payload",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_seed_reproducibility",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_sensor_blocks_point",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_sensor_recovery_dwell",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_sunlight_boundary",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_telemetry_dictionary",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_thermal_clear_keeps_physics",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_thermal_recovery",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_BOOT_BOOT",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_BOOT_RECOVER",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_BOOT_RESUME",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_NOMINAL_BOOT",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_NOMINAL_RECOVER",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_NOMINAL_RESUME",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_RECOVERY_BOOT",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_RECOVERY_RECOVER",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_RECOVERY_RESUME",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_SAFE_BOOT",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_SAFE_RECOVER",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_transition_SAFE_RESUME",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_auth",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_delete",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_drop_database",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_exit",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_nominal",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_payload_start",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_power_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_reboot",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_reset",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_set_battery",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_set_mode",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_unknown_unknown",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_watchdog_count",
+      "status": "passed"
+    },
+    {
+      "id": "test_flight.FlightTests.test_wheel_recovery_requires_desat",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_100_command_reconciliation",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_boolean_not_number",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_downlink_restore",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_duplicate_conflict",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_duplicate_idempotent",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_duplicate_parameter_conflict",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_extra_parameter",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_failure_terminal",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_fault_fraction",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_independent_guard",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_0",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_1",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_2",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_3",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_4",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_5",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_invalid_id_6",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_isolated_runs",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_journal_cursor",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_journal_roundtrip",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_journal_survives_reopen",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_lifecycle",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_no_active_procedure",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_observer_procedure_denied",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_adcs_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_adcs_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_boot",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_clear_faults",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_desaturate",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_heater_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_heater_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_inject_fault",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_payload_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_payload_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_point",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_recover",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_resume",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_administrator_safe",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_adcs_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_adcs_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_boot",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_clear_faults",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_desaturate",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_heater_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_heater_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_inject_fault",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_payload_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_payload_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_point",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_recover",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_resume",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_observer_safe",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_adcs_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_adcs_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_boot",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_clear_faults",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_desaturate",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_heater_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_heater_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_inject_fault",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_payload_off",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_payload_on",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_point",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_recover",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_resume",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_permission_operator_safe",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_procedure_commission",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_procedure_stays_pending",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rejection_not_transmitted",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_heater_on_temperature",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_payload_on_angular_rate",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_payload_on_battery_soc",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_payload_on_sensor_age",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_payload_on_temperature",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_point_adcs_enabled",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_rule_boundary_point_link_connected",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_stale_boundary",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_stale_keeps_last_value",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_string_not_number",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_timeout_terminal",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_unknown_command",
+      "status": "passed"
+    },
+    {
+      "id": "test_ground.GroundTests.test_unknown_procedure",
+      "status": "passed"
+    }
+  ],
+  "scope": "Local C++ process and Python gateway unit/integration tests. UI checks recorded separately."
+}
