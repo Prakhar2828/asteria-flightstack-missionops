@@ -1,0 +1,50 @@
+{
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "executable": "AsteriaBridge",
+  "isolated_child": {
+    "steps": 20000,
+    "wall_seconds": 0.09835574997123331,
+    "user_cpu_seconds": 0.090444,
+    "system_cpu_seconds": 0.006953,
+    "peak_resident_kib": 1840.0
+  },
+  "scheduler": {
+    "active_sessions": 8,
+    "simulation_speed": 60,
+    "samples": [
+      {
+        "lateness_ms": 5.0884580123238266,
+        "work_ms": 2.6760839973576367,
+        "budget_ms": 1000
+      },
+      {
+        "lateness_ms": 5.0775830168277025,
+        "work_ms": 3.5682920133695006,
+        "budget_ms": 1000
+      },
+      {
+        "lateness_ms": 5.0688330084085464,
+        "work_ms": 3.265584004111588,
+        "budget_ms": 1000
+      },
+      {
+        "lateness_ms": 5.094457999803126,
+        "work_ms": 2.98475002637133,
+        "budget_ms": 1000
+      },
+      {
+        "lateness_ms": 0.42233301792293787,
+        "work_ms": 4.397624987177551,
+        "budget_ms": 1000
+      },
+      {
+        "lateness_ms": 5.076250003185123,
+        "work_ms": 4.308542003855109,
+        "budget_ms": 1000
+      }
+    ],
+    "work_overruns": 0,
+    "late_by_full_period": 0
+  },
+  "limits": "Short local host profile, not real-time certification. Peak RSS and CPU cover the isolated flight executable; scheduler timing covers the Python ground scheduler, separately from F Prime rate-group verification."
+}

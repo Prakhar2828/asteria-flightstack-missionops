@@ -1,0 +1,867 @@
+[
+  {
+    "id": 1,
+    "sim": 0.0,
+    "wall": 1794192810.083731,
+    "kind": "run",
+    "data": {
+      "seed": 42,
+      "role": "administrator",
+      "protocol_version": 1,
+      "epoch_ms": 1794192810081.2612
+    }
+  },
+  {
+    "id": 2,
+    "sim": 0.0,
+    "wall": 1794192810.083905,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "TELEMETRY",
+      "mode": "BOOT",
+      "seed": 42,
+      "telemetry": {
+        "time": 0,
+        "battery_soc": 82,
+        "bus_voltage": 7.9,
+        "solar_power": 0,
+        "load_power": 0,
+        "temperature": 22,
+        "heater": 0,
+        "attitude": 0,
+        "angular_rate": 0.12,
+        "wheel_rpm": 0,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 0,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 0,
+        "missed_deadlines": 0,
+        "commands_accepted": 0,
+        "commands_rejected": 0,
+        "orbit_phase": 0,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 0
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "sim": 0.0,
+    "wall": 1794192810.0840719,
+    "kind": "command_requested",
+    "data": {
+      "id": "285179912129958",
+      "command": "BOOT",
+      "value": 0,
+      "role": "administrator"
+    }
+  },
+  {
+    "id": 4,
+    "sim": 0.0,
+    "wall": 1794192810.084216,
+    "kind": "command_transmitted",
+    "data": {
+      "id": "285179912129958",
+      "command": "BOOT"
+    }
+  },
+  {
+    "id": 5,
+    "sim": 0.0,
+    "wall": 1794192810.0844018,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "ACKNOWLEDGED",
+      "mode": "NOMINAL",
+      "seed": 42,
+      "telemetry": {
+        "time": 0,
+        "battery_soc": 82,
+        "bus_voltage": 7.9,
+        "solar_power": 0,
+        "load_power": 0,
+        "temperature": 22,
+        "heater": 0,
+        "attitude": 0,
+        "angular_rate": 0.12,
+        "wheel_rpm": 0,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 0,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 0,
+        "missed_deadlines": 0,
+        "commands_accepted": 1,
+        "commands_rejected": 0,
+        "orbit_phase": 0,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 0
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "sim": 0.0,
+    "wall": 1794192810.084558,
+    "kind": "command_terminal",
+    "data": {
+      "id": "285179912129958",
+      "command": "BOOT",
+      "status": "acknowledged",
+      "reason": "ACKNOWLEDGED",
+      "latency_ms": 0.487250043079257
+    }
+  },
+  {
+    "id": 7,
+    "sim": 0.0,
+    "wall": 1794192810.0847008,
+    "kind": "command_requested",
+    "data": {
+      "id": "285179912761541",
+      "command": "INJECT_FAULT",
+      "value": 2,
+      "role": "administrator"
+    }
+  },
+  {
+    "id": 8,
+    "sim": 0.0,
+    "wall": 1794192810.084842,
+    "kind": "command_transmitted",
+    "data": {
+      "id": "285179912761541",
+      "command": "INJECT_FAULT"
+    }
+  },
+  {
+    "id": 9,
+    "sim": 0.0,
+    "wall": 1794192810.0850072,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "ACKNOWLEDGED",
+      "mode": "SAFE",
+      "seed": 42,
+      "telemetry": {
+        "time": 0,
+        "battery_soc": 82,
+        "bus_voltage": 7.9,
+        "solar_power": 0,
+        "load_power": 0,
+        "temperature": 22,
+        "heater": 0,
+        "attitude": 0,
+        "angular_rate": 0.12,
+        "wheel_rpm": 0,
+        "target_angle": 0,
+        "sensor_age": 3,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 0,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 0,
+        "missed_deadlines": 0,
+        "commands_accepted": 2,
+        "commands_rejected": 0,
+        "orbit_phase": 0,
+        "sunlight": 1,
+        "healthy": 0,
+        "healthy_dwell": 0
+      },
+      "faults": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "sim": 0.0,
+    "wall": 1794192810.0851479,
+    "kind": "command_terminal",
+    "data": {
+      "id": "285179912761541",
+      "command": "INJECT_FAULT",
+      "status": "acknowledged",
+      "reason": "ACKNOWLEDGED",
+      "latency_ms": 0.4467499675229192
+    }
+  },
+  {
+    "id": 11,
+    "sim": 20.0,
+    "wall": 1794192810.08531,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "STEPPED",
+      "mode": "SAFE",
+      "seed": 42,
+      "telemetry": {
+        "time": 20,
+        "battery_soc": 82.2222222222,
+        "bus_voltage": 7.97333333333,
+        "solar_power": 12,
+        "load_power": 4,
+        "temperature": 22.0784980859,
+        "heater": 0,
+        "attitude": 2.4,
+        "angular_rate": 0.12,
+        "wheel_rpm": 0,
+        "target_angle": 0,
+        "sensor_age": 23,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 20,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 20,
+        "missed_deadlines": 0,
+        "commands_accepted": 2,
+        "commands_rejected": 0,
+        "orbit_phase": 0.0037037037037,
+        "sunlight": 1,
+        "healthy": 0,
+        "healthy_dwell": 0
+      },
+      "faults": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "sim": 20.0,
+    "wall": 1794192810.085367,
+    "kind": "command_requested",
+    "data": {
+      "id": "285179913429000",
+      "command": "CLEAR_FAULTS",
+      "value": 0,
+      "role": "administrator"
+    }
+  },
+  {
+    "id": 13,
+    "sim": 20.0,
+    "wall": 1794192810.085504,
+    "kind": "command_transmitted",
+    "data": {
+      "id": "285179913429000",
+      "command": "CLEAR_FAULTS"
+    }
+  },
+  {
+    "id": 14,
+    "sim": 20.0,
+    "wall": 1794192810.085669,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "ACKNOWLEDGED",
+      "mode": "SAFE",
+      "seed": 42,
+      "telemetry": {
+        "time": 20,
+        "battery_soc": 82.2222222222,
+        "bus_voltage": 7.97333333333,
+        "solar_power": 12,
+        "load_power": 4,
+        "temperature": 22.0784980859,
+        "heater": 0,
+        "attitude": 2.4,
+        "angular_rate": 0.12,
+        "wheel_rpm": 0,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 20,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 20,
+        "missed_deadlines": 0,
+        "commands_accepted": 3,
+        "commands_rejected": 0,
+        "orbit_phase": 0.0037037037037,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 0
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "FAULT_SOURCES_CLEARED",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "CMD_CLEAR_FAULTS",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "sim": 20.0,
+    "wall": 1794192810.0858061,
+    "kind": "command_terminal",
+    "data": {
+      "id": "285179913429000",
+      "command": "CLEAR_FAULTS",
+      "status": "acknowledged",
+      "reason": "ACKNOWLEDGED",
+      "latency_ms": 0.4380419850349426
+    }
+  },
+  {
+    "id": 16,
+    "sim": 30.0,
+    "wall": 1794192810.0859709,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "STEPPED",
+      "mode": "SAFE",
+      "seed": 42,
+      "telemetry": {
+        "time": 30,
+        "battery_soc": 82.3333333333,
+        "bus_voltage": 7.976,
+        "solar_power": 12,
+        "load_power": 4,
+        "temperature": 22.1165840921,
+        "heater": 0,
+        "attitude": 3.23697041441,
+        "angular_rate": 0.0586151696501,
+        "wheel_rpm": 6.18650006474,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 30,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 30,
+        "missed_deadlines": 0,
+        "commands_accepted": 3,
+        "commands_rejected": 0,
+        "orbit_phase": 0.00555555555556,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 10
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "FAULT_SOURCES_CLEARED",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "CMD_CLEAR_FAULTS",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "sim": 30.0,
+    "wall": 1794192810.086112,
+    "kind": "command_requested",
+    "data": {
+      "id": "285179914172541",
+      "command": "RECOVER",
+      "value": 0,
+      "role": "administrator"
+    }
+  },
+  {
+    "id": 18,
+    "sim": 30.0,
+    "wall": 1794192810.086288,
+    "kind": "command_transmitted",
+    "data": {
+      "id": "285179914172541",
+      "command": "RECOVER"
+    }
+  },
+  {
+    "id": 19,
+    "sim": 30.0,
+    "wall": 1794192810.0865111,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "ACKNOWLEDGED",
+      "mode": "RECOVERY",
+      "seed": 42,
+      "telemetry": {
+        "time": 30,
+        "battery_soc": 82.3333333333,
+        "bus_voltage": 7.976,
+        "solar_power": 12,
+        "load_power": 4,
+        "temperature": 22.1165840921,
+        "heater": 0,
+        "attitude": 3.23697041441,
+        "angular_rate": 0.0586151696501,
+        "wheel_rpm": 6.18650006474,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 30,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 30,
+        "missed_deadlines": 0,
+        "commands_accepted": 4,
+        "commands_rejected": 0,
+        "orbit_phase": 0.00555555555556,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 10
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "FAULT_SOURCES_CLEARED",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "CMD_CLEAR_FAULTS",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "MODE_RECOVERY",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "CMD_RECOVER",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "sim": 30.0,
+    "wall": 1794192810.08658,
+    "kind": "command_terminal",
+    "data": {
+      "id": "285179914172541",
+      "command": "RECOVER",
+      "status": "acknowledged",
+      "reason": "ACKNOWLEDGED",
+      "latency_ms": 0.46791700879111886
+    }
+  },
+  {
+    "id": 21,
+    "sim": 30.0,
+    "wall": 1794192810.086744,
+    "kind": "command_requested",
+    "data": {
+      "id": "285179914803708",
+      "command": "RESUME",
+      "value": 0,
+      "role": "administrator"
+    }
+  },
+  {
+    "id": 22,
+    "sim": 30.0,
+    "wall": 1794192810.086897,
+    "kind": "command_transmitted",
+    "data": {
+      "id": "285179914803708",
+      "command": "RESUME"
+    }
+  },
+  {
+    "id": 23,
+    "sim": 30.0,
+    "wall": 1794192810.087111,
+    "kind": "telemetry",
+    "data": {
+      "protocol_version": 1,
+      "ok": true,
+      "reason": "ACKNOWLEDGED",
+      "mode": "NOMINAL",
+      "seed": 42,
+      "telemetry": {
+        "time": 30,
+        "battery_soc": 82.3333333333,
+        "bus_voltage": 7.976,
+        "solar_power": 12,
+        "load_power": 4,
+        "temperature": 22.1165840921,
+        "heater": 0,
+        "attitude": 3.23697041441,
+        "angular_rate": 0.0586151696501,
+        "wheel_rpm": 6.18650006474,
+        "target_angle": 0,
+        "sensor_age": 0,
+        "adcs_enabled": 1,
+        "link_connected": 1,
+        "link_age": 0,
+        "packets": 30,
+        "payload_enabled": 0,
+        "payload_data": 0,
+        "ticks": 30,
+        "missed_deadlines": 0,
+        "commands_accepted": 5,
+        "commands_rejected": 0,
+        "orbit_phase": 0.00555555555556,
+        "sunlight": 1,
+        "healthy": 1,
+        "healthy_dwell": 10
+      },
+      "faults": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "events": [
+        {
+          "time": 0,
+          "code": "BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "CMD_BOOT",
+          "severity": "INFO"
+        },
+        {
+          "time": 0,
+          "code": "FAULT_2",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "MODE_SAFE",
+          "severity": "CRITICAL"
+        },
+        {
+          "time": 0,
+          "code": "CMD_INJECT_FAULT",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "FAULT_SOURCES_CLEARED",
+          "severity": "INFO"
+        },
+        {
+          "time": 20,
+          "code": "CMD_CLEAR_FAULTS",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "MODE_RECOVERY",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "CMD_RECOVER",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "MODE_NOMINAL",
+          "severity": "INFO"
+        },
+        {
+          "time": 30,
+          "code": "CMD_RESUME",
+          "severity": "INFO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "sim": 30.0,
+    "wall": 1794192810.087268,
+    "kind": "command_terminal",
+    "data": {
+      "id": "285179914803708",
+      "command": "RESUME",
+      "status": "acknowledged",
+      "reason": "ACKNOWLEDGED",
+      "latency_ms": 0.5238340236246586
+    }
+  }
+]

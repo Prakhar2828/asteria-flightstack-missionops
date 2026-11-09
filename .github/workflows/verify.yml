@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install pinned runtime
+        run: python -m pip install -r requirements.txt
       - name: Build and verify flight and ground software
         run: python scripts/verify.py
       - name: Sanitizer build
@@ -30,3 +32,22 @@ jobs:
         with:
           name: evidence-${{ matrix.os }}
           path: evidence/
+
+  fprime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build portable reference
+        run: python scripts/build.py
+      - name: Build pinned F Prime deployment
+        run: python scripts/setup_fprime.py
+      - name: Verify generated ports, parity and scheduling
+        run: python scripts/verify_fprime.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fprime-evidence
+          path: evidence/fprime*

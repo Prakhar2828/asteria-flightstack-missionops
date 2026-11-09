@@ -1,36 +1,14 @@
 # Application evidence and ownership
 
-This is an AI-assisted initial implementation. Do not present AI-generated work as unassisted personal authorship. Before applying, build and run it yourself, inspect and understand the source, make substantive changes, and record your own decisions and verification. A project can support an interview only if you can explain and defend it.
+Use measured claims from `technical-report.md`, not the original proposal's targets. The 26 shared channels and 12 operational commands belong to one connected spacecraft; do not double-count them across projects.
 
-## Verified repository facts
+Suitable project descriptions after reviewing and reproducing the work:
 
-- C++17 simulated spacecraft process with five subsystem models, four operating modes, six injected fault categories, 26 shared telemetry channels, and 12 flight commands.
-- Independent Python ground guards, three training roles, six executable procedures, SQLite journal storage, and an interactive local console with replay and exports.
-- Actual automated test results, HTTP checks, sanitizer outputs and repeatability measurements are in `evidence/`; use the current technical report for counts and exact values.
-- Forty scoped prototype requirements have referenced automated test cases. This is not completion of the original full master specification.
+- **Asteria FlightStack:** Developed an AI-assisted C++17 spacecraft software testbed with five simplified subsystem models, four operating modes and six injected fault classes; integrated a typed NASA F Prime component and scheduled deployment, with command-dispatch parity tests and instrumented core coverage.
+- **MissionOps:** Built a local FastAPI/Open MCT operations environment with WebSocket telemetry, six subsystem workspaces, independent command guards, executable recovery procedures, SQLite/PostgreSQL audit storage and deterministic recorded-mission replay.
 
-## Safe draft language after independent review and substantive contribution
+Attach the measured test count, p95 latency and coverage denominator only from the current report. Explain that gateway, browser and simulated-time measurements cover different intervals. The evidence folder contains raw traces and scripts so a reviewer can reproduce the results.
 
-Adapt these only to the work you actually own:
+Do not claim eight custom F Prime components, flight qualification, RTOS/HIL testing, production identity, real spacecraft data, verified TCP/CCSDS transport, Linux CI success, public hosting or NASA endorsement. The delivered architecture uses one custom framework component around five subsystem models, with separate upstream framework services.
 
-- “Developed and evaluated a C++ spacecraft simulation with autonomous SAFE-mode protection, guarded recovery, and deterministic fault-injection scenarios across power, thermal, sensor, communication, watchdog, and actuator faults.”
-- “Built a local mission-operations console with independently validated commands, acknowledgment auditing, SQLite event history, executable recovery procedures, and read-only mission replay.”
-- “Validated [actual test count] enumerated cases and compared 20 same-seed 30-minute simulation traces, preserving raw results and requirements-to-test mappings.”
-
-Do not describe these as F Prime/Open MCT projects, production authentication, a calibrated spacecraft digital twin, real-time flight software, hardware-in-the-loop, CCSDS-compliant software, full coverage, actual flight operations, NASA systems, or flight-certified code. Those facts are not established.
-
-## Evidence audit
-
-| Claim | Artifact | Status |
-|---|---|---|
-| C++ simulator and five subsystem state types | `flight/flight.hpp`, passing flight tests | Verified local prototype |
-| Fault protection / recovery | `test_flight` fault and recovery cases | Verified enumerated cases |
-| Role enforcement / command IDs | `test_ground` permission and idempotency cases | Verified training-session behavior |
-| Local interactive console source | `web/`, HTTP asset checks, JS syntax check | Implemented; browser behavior/visual QA unverified |
-| Journal durability | Journal round-trip / reopened connection tests | Verified local SQLite scope |
-| Repeatability | `benchmark.json`, raw trace | Verified same host / seed / scenario |
-| Measured latency | Raw latency samples | Local process gateway only |
-| CI / Linux / public demo | No hosted execution or publication | Not verified |
-| F Prime / Open MCT | No implementation | Not eligible |
-
-Local performance numbers are hardware-dependent and often less useful on a resume than the engineering method. Never substitute design targets for actual results. Keep shared channels and commands counted once across the two projects.
+Before applying, be prepared to explain the power balance, single-axis controller, thermal relaxation, mode transition table, delayed communication-loss protection, recovery dwell, command ID deduplication, stale telemetry handling and why a cleared fault does not reset physical state. Make an independent change and review the implementation yourself; AI-assisted implementation does not substitute for personal understanding.

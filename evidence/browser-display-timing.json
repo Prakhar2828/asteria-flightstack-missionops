@@ -1,0 +1,410 @@
+{
+  "scope": "Same-host gateway telemetry receipt to browser requestAnimationFrame callback, one sample per fresh receipt. Includes stream scheduling; not physical display latency or RF latency. First sample may include page navigation delay.",
+  "samples": [
+    {
+      "sequence": 1,
+      "received_at_ms": 1794231686423.0552,
+      "sent_at_ms": 1794231686430.376,
+      "paint_callback_ms": 1794231686434,
+      "latency_ms": 10.94482421875,
+      "stream_latency_ms": 3.6240234375,
+      "alarms": []
+    },
+    {
+      "sequence": 30,
+      "received_at_ms": 1794231693503.1382,
+      "sent_at_ms": 1794231693731.0059,
+      "paint_callback_ms": 1794231693737,
+      "latency_ms": 233.86181640625,
+      "stream_latency_ms": 5.994140625,
+      "alarms": []
+    },
+    {
+      "sequence": 34,
+      "received_at_ms": 1794231694501.0078,
+      "sent_at_ms": 1794231694738.847,
+      "paint_callback_ms": 1794231694745,
+      "latency_ms": 243.9921875,
+      "stream_latency_ms": 6.153076171875,
+      "alarms": []
+    },
+    {
+      "sequence": 38,
+      "received_at_ms": 1794231695503.0469,
+      "sent_at_ms": 1794231695745.791,
+      "paint_callback_ms": 1794231695752,
+      "latency_ms": 248.953125,
+      "stream_latency_ms": 6.208984375,
+      "alarms": []
+    },
+    {
+      "sequence": 42,
+      "received_at_ms": 1794231696502.6611,
+      "sent_at_ms": 1794231696753.967,
+      "paint_callback_ms": 1794231696760,
+      "latency_ms": 257.3388671875,
+      "stream_latency_ms": 6.032958984375,
+      "alarms": []
+    },
+    {
+      "sequence": 45,
+      "received_at_ms": 1794231697500.6343,
+      "sent_at_ms": 1794231697510.305,
+      "paint_callback_ms": 1794231697515,
+      "latency_ms": 14.36572265625,
+      "stream_latency_ms": 4.695068359375,
+      "alarms": []
+    },
+    {
+      "sequence": 49,
+      "received_at_ms": 1794231698500.63,
+      "sent_at_ms": 1794231698517.8782,
+      "paint_callback_ms": 1794231698522,
+      "latency_ms": 21.3701171875,
+      "stream_latency_ms": 4.121826171875,
+      "alarms": []
+    },
+    {
+      "sequence": 53,
+      "received_at_ms": 1794231699503.0962,
+      "sent_at_ms": 1794231699525.9243,
+      "paint_callback_ms": 1794231699532,
+      "latency_ms": 28.90380859375,
+      "stream_latency_ms": 6.07568359375,
+      "alarms": []
+    },
+    {
+      "sequence": 57,
+      "received_at_ms": 1794231700502.946,
+      "sent_at_ms": 1794231700532.801,
+      "paint_callback_ms": 1794231700537,
+      "latency_ms": 34.053955078125,
+      "stream_latency_ms": 4.198974609375,
+      "alarms": []
+    },
+    {
+      "sequence": 61,
+      "received_at_ms": 1794231701501.961,
+      "sent_at_ms": 1794231701539.829,
+      "paint_callback_ms": 1794231701545,
+      "latency_ms": 43.0390625,
+      "stream_latency_ms": 5.1708984375,
+      "alarms": []
+    },
+    {
+      "sequence": 65,
+      "received_at_ms": 1794231702502.749,
+      "sent_at_ms": 1794231702547.085,
+      "paint_callback_ms": 1794231702548,
+      "latency_ms": 45.2509765625,
+      "stream_latency_ms": 0.9150390625,
+      "alarms": []
+    },
+    {
+      "sequence": 69,
+      "received_at_ms": 1794231703502.765,
+      "sent_at_ms": 1794231703553.98,
+      "paint_callback_ms": 1794231703565,
+      "latency_ms": 62.235107421875,
+      "stream_latency_ms": 11.02001953125,
+      "alarms": []
+    },
+    {
+      "sequence": 73,
+      "received_at_ms": 1794231704502.919,
+      "sent_at_ms": 1794231704558.676,
+      "paint_callback_ms": 1794231704564,
+      "latency_ms": 61.0810546875,
+      "stream_latency_ms": 5.323974609375,
+      "alarms": []
+    },
+    {
+      "sequence": 77,
+      "received_at_ms": 1794231705498.952,
+      "sent_at_ms": 1794231705566.7231,
+      "paint_callback_ms": 1794231705572,
+      "latency_ms": 73.048095703125,
+      "stream_latency_ms": 5.27685546875,
+      "alarms": []
+    },
+    {
+      "sequence": 81,
+      "received_at_ms": 1794231706502.7468,
+      "sent_at_ms": 1794231706573.843,
+      "paint_callback_ms": 1794231706575,
+      "latency_ms": 72.253173828125,
+      "stream_latency_ms": 1.156982421875,
+      "alarms": []
+    },
+    {
+      "sequence": 85,
+      "received_at_ms": 1794231707502.692,
+      "sent_at_ms": 1794231707581.3918,
+      "paint_callback_ms": 1794231707584,
+      "latency_ms": 81.30810546875,
+      "stream_latency_ms": 2.608154296875,
+      "alarms": []
+    },
+    {
+      "sequence": 89,
+      "received_at_ms": 1794231708502.728,
+      "sent_at_ms": 1794231708589.427,
+      "paint_callback_ms": 1794231708594,
+      "latency_ms": 91.27197265625,
+      "stream_latency_ms": 4.572998046875,
+      "alarms": []
+    },
+    {
+      "sequence": 93,
+      "received_at_ms": 1794231709498.823,
+      "sent_at_ms": 1794231709594.3943,
+      "paint_callback_ms": 1794231709600,
+      "latency_ms": 101.177001953125,
+      "stream_latency_ms": 5.605712890625,
+      "alarms": []
+    },
+    {
+      "sequence": 97,
+      "received_at_ms": 1794231710498.84,
+      "sent_at_ms": 1794231710602.609,
+      "paint_callback_ms": 1794231710608,
+      "latency_ms": 109.159912109375,
+      "stream_latency_ms": 5.39111328125,
+      "alarms": []
+    },
+    {
+      "sequence": 101,
+      "received_at_ms": 1794231711502.78,
+      "sent_at_ms": 1794231711611.042,
+      "paint_callback_ms": 1794231711616,
+      "latency_ms": 113.219970703125,
+      "stream_latency_ms": 4.9580078125,
+      "alarms": []
+    },
+    {
+      "sequence": 105,
+      "received_at_ms": 1794231712501.497,
+      "sent_at_ms": 1794231712619.2188,
+      "paint_callback_ms": 1794231712624,
+      "latency_ms": 122.5029296875,
+      "stream_latency_ms": 4.78125,
+      "alarms": []
+    },
+    {
+      "sequence": 109,
+      "received_at_ms": 1794231713501.3708,
+      "sent_at_ms": 1794231713624.232,
+      "paint_callback_ms": 1794231713629,
+      "latency_ms": 127.629150390625,
+      "stream_latency_ms": 4.76806640625,
+      "alarms": []
+    },
+    {
+      "sequence": 113,
+      "received_at_ms": 1794231714498.647,
+      "sent_at_ms": 1794231714630.16,
+      "paint_callback_ms": 1794231714635,
+      "latency_ms": 136.35302734375,
+      "stream_latency_ms": 4.840087890625,
+      "alarms": []
+    },
+    {
+      "sequence": 117,
+      "received_at_ms": 1794231715502.482,
+      "sent_at_ms": 1794231715636.4531,
+      "paint_callback_ms": 1794231715641,
+      "latency_ms": 138.51806640625,
+      "stream_latency_ms": 4.546875,
+      "alarms": []
+    },
+    {
+      "sequence": 121,
+      "received_at_ms": 1794231716498.6592,
+      "sent_at_ms": 1794231716642.7131,
+      "paint_callback_ms": 1794231716646,
+      "latency_ms": 147.3408203125,
+      "stream_latency_ms": 3.286865234375,
+      "alarms": []
+    },
+    {
+      "sequence": 125,
+      "received_at_ms": 1794231717502.5122,
+      "sent_at_ms": 1794231717648.7478,
+      "paint_callback_ms": 1794231717652,
+      "latency_ms": 149.48779296875,
+      "stream_latency_ms": 3.252197265625,
+      "alarms": []
+    },
+    {
+      "sequence": 129,
+      "received_at_ms": 1794231718502.5781,
+      "sent_at_ms": 1794231718654.3623,
+      "paint_callback_ms": 1794231718658,
+      "latency_ms": 155.421875,
+      "stream_latency_ms": 3.6376953125,
+      "alarms": []
+    },
+    {
+      "sequence": 133,
+      "received_at_ms": 1794231719498.6292,
+      "sent_at_ms": 1794231719662.452,
+      "paint_callback_ms": 1794231719667,
+      "latency_ms": 168.370849609375,
+      "stream_latency_ms": 4.548095703125,
+      "alarms": []
+    },
+    {
+      "sequence": 137,
+      "received_at_ms": 1794231720502.699,
+      "sent_at_ms": 1794231720670.1792,
+      "paint_callback_ms": 1794231720675,
+      "latency_ms": 172.301025390625,
+      "stream_latency_ms": 4.82080078125,
+      "alarms": []
+    },
+    {
+      "sequence": 141,
+      "received_at_ms": 1794231721498.583,
+      "sent_at_ms": 1794231721678.019,
+      "paint_callback_ms": 1794231721683,
+      "latency_ms": 184.4169921875,
+      "stream_latency_ms": 4.98095703125,
+      "alarms": []
+    },
+    {
+      "sequence": 145,
+      "received_at_ms": 1794231722502.435,
+      "sent_at_ms": 1794231722683.173,
+      "paint_callback_ms": 1794231722687,
+      "latency_ms": 184.56494140625,
+      "stream_latency_ms": 3.826904296875,
+      "alarms": []
+    },
+    {
+      "sequence": 149,
+      "received_at_ms": 1794231723502.55,
+      "sent_at_ms": 1794231723690.022,
+      "paint_callback_ms": 1794231723694,
+      "latency_ms": 191.449951171875,
+      "stream_latency_ms": 3.97802734375,
+      "alarms": []
+    },
+    {
+      "sequence": 153,
+      "received_at_ms": 1794231724500.535,
+      "sent_at_ms": 1794231724695.183,
+      "paint_callback_ms": 1794231724701,
+      "latency_ms": 200.465087890625,
+      "stream_latency_ms": 5.81689453125,
+      "alarms": []
+    },
+    {
+      "sequence": 157,
+      "received_at_ms": 1794231725500.64,
+      "sent_at_ms": 1794231725703.308,
+      "paint_callback_ms": 1794231725707,
+      "latency_ms": 206.360107421875,
+      "stream_latency_ms": 3.69189453125,
+      "alarms": []
+    },
+    {
+      "sequence": 161,
+      "received_at_ms": 1794231726499.632,
+      "sent_at_ms": 1794231726711.872,
+      "paint_callback_ms": 1794231726714,
+      "latency_ms": 214.367919921875,
+      "stream_latency_ms": 2.1279296875,
+      "alarms": []
+    },
+    {
+      "sequence": 165,
+      "received_at_ms": 1794231727498.3162,
+      "sent_at_ms": 1794231727718.226,
+      "paint_callback_ms": 1794231727723,
+      "latency_ms": 224.683837890625,
+      "stream_latency_ms": 4.77392578125,
+      "alarms": []
+    },
+    {
+      "sequence": 169,
+      "received_at_ms": 1794231728500.307,
+      "sent_at_ms": 1794231728724.417,
+      "paint_callback_ms": 1794231728729,
+      "latency_ms": 228.693115234375,
+      "stream_latency_ms": 4.5830078125,
+      "alarms": []
+    },
+    {
+      "sequence": 173,
+      "received_at_ms": 1794231729502.308,
+      "sent_at_ms": 1794231729732.938,
+      "paint_callback_ms": 1794231729738,
+      "latency_ms": 235.69189453125,
+      "stream_latency_ms": 5.06201171875,
+      "alarms": []
+    },
+    {
+      "sequence": 177,
+      "received_at_ms": 1794231730498.1812,
+      "sent_at_ms": 1794231730741.2979,
+      "paint_callback_ms": 1794231730746,
+      "latency_ms": 247.81884765625,
+      "stream_latency_ms": 4.7021484375,
+      "alarms": []
+    },
+    {
+      "sequence": 180,
+      "received_at_ms": 1794231731498.49,
+      "sent_at_ms": 1794231731499.744,
+      "paint_callback_ms": 1794231731504,
+      "latency_ms": 5.510009765625,
+      "stream_latency_ms": 4.256103515625,
+      "alarms": []
+    },
+    {
+      "sequence": 184,
+      "received_at_ms": 1794231732502.4531,
+      "sent_at_ms": 1794231732505.7668,
+      "paint_callback_ms": 1794231732511,
+      "latency_ms": 8.546875,
+      "stream_latency_ms": 5.233154296875,
+      "alarms": []
+    },
+    {
+      "sequence": 188,
+      "received_at_ms": 1794231733501.832,
+      "sent_at_ms": 1794231733513.927,
+      "paint_callback_ms": 1794231733517,
+      "latency_ms": 15.16796875,
+      "stream_latency_ms": 3.072998046875,
+      "alarms": []
+    },
+    {
+      "sequence": 192,
+      "received_at_ms": 1794231734502.316,
+      "sent_at_ms": 1794231734521.921,
+      "paint_callback_ms": 1794231734527,
+      "latency_ms": 24.68408203125,
+      "stream_latency_ms": 5.0791015625,
+      "alarms": []
+    },
+    {
+      "sequence": 196,
+      "received_at_ms": 1794231735502.355,
+      "sent_at_ms": 1794231735531.2751,
+      "paint_callback_ms": 1794231735537,
+      "latency_ms": 34.64501953125,
+      "stream_latency_ms": 5.724853515625,
+      "alarms": []
+    },
+    {
+      "sequence": 200,
+      "received_at_ms": 1794231736498.231,
+      "sent_at_ms": 1794231736539.256,
+      "paint_callback_ms": 1794231736545,
+      "latency_ms": 46.76904296875,
+      "stream_latency_ms": 5.743896484375,
+      "alarms": []
+    }
+  ]
+}

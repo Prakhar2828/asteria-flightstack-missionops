@@ -54,3 +54,15 @@ Downlink age = current simulated time − last successfully received telemetry t
 The HTTP journal endpoint currently caps one response at 100,000 rows. `/api/records` supports cursor pagination. Very long mission exports must be paginated by a client; the UI is designed for short demonstration sessions. No automatic disk retention policy is implemented. The full journal persists on disk until the user removes it; normal UI history and event lists are bounded separately.
 
 Replay is journal playback, not a new physical simulation. The benchmark independently re-executes a deterministic scenario and compares complete trace hashes. Gaps in received telemetry are not filled with invented samples. Replay chart gaps larger than 60 s are disconnected; smaller gaps are linearly drawn for visual continuity.
+
+## Framework and streaming extension
+
+`GET /api/health` identifies `fprime` or `portable` and the database backend. The F Prime bridge decodes generated command arguments before applying the shared model. It is a local process transport, not a claim that the separate scheduled deployment's TCP or CCSDS uplink has been verified.
+
+`WS /api/stream` requires a first JSON message `{ "token": "<session token>" }` within five seconds. The token is never placed in a URL. Each envelope includes increasing connection-local `sequence`, `sent_at_ms` (host wall-clock milliseconds) and `status`. Each connection starts its own sequence. The server sends current state every 250 ms and closes clients that cannot accept a send within two seconds. Reconnect gets a current snapshot; the durable HTTP journal is the source for missed historical records.
+
+`status.epoch_ms + telemetry.time * 1000` projects simulation time onto a UTC axis. `status.received_at_ms` records host receipt of the latest available flight snapshot. It is used for same-host browser timing; it is not a spacecraft clock or radio timestamp. A repeated WebSocket snapshot does not create a new telemetry receipt.
+
+`GET /api/history/{channel}?start=<epoch ms>&end=<epoch ms>` returns stored telemetry points for the authenticated run, bounded to 50,000 rows. `GET /api/records?after=<record id>&limit=<count>` supports bounded pagination. Export freezes the current upper record ID and streams all records up to that boundary. SQLite and PostgreSQL implement equivalent journal semantics; schema version 1 is created idempotently.
+
+FastAPI rejects extra fields, invalid roles, nonfinite parameters, malformed bodies and bodies above 8 KiB. All endpoints enforce loopback host and same-origin browser requests. OpenAPI schema is available at `/openapi.json`; interactive API documentation at `/docs`. Training role authorization is server-side within the selected session, not a production identity system.

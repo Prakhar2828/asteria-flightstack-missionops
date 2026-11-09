@@ -1,0 +1,55 @@
+name: Publish interactive demo
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned official Emscripten SDK
+        run: |
+          git init "$RUNNER_TEMP/emsdk"
+          git -C "$RUNNER_TEMP/emsdk" remote add origin https://github.com/emscripten-core/emsdk.git
+          git -C "$RUNNER_TEMP/emsdk" fetch --depth 1 origin 1693ce7359fc9694f198694f902a2cc061239b86
+          git -C "$RUNNER_TEMP/emsdk" checkout FETCH_HEAD
+          python "$RUNNER_TEMP/emsdk/emsdk.py" install 4.0.23
+          python "$RUNNER_TEMP/emsdk/emsdk.py" activate 4.0.23
+      - name: Build public demo and verify C++ parity
+        run: |
+          source "$RUNNER_TEMP/emsdk/emsdk_env.sh"
+          python scripts/build.py
+          python scripts/build_public.py
+          python scripts/verify_public.py
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-demo-verification
+          path: evidence/public-verification.json
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

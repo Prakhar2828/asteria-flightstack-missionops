@@ -1,0 +1,8 @@
+html,body{margin:0;height:100%;overflow:hidden}#asteria-bar{height:46px;background:#102128;color:#e1f2ef;display:flex;align-items:center;gap:25px;padding:0 18px;font:11px system-ui,sans-serif}#asteria-bar a{color:#6ce5c0}#asteria-bar label{margin-left:auto}#openmct-app{height:calc(100vh - 46px);position:relative}#stream-status{color:#91b0ba}@media(max-width:700px){#asteria-bar{gap:10px;font-size:9px}#asteria-bar strong{display:none}}
+/* Constrain Open MCT's full-window shell beneath the mission navigation. */
+#openmct-app > .l-shell{position:absolute;inset:0}
+#openmct-app{isolation:isolate;contain:layout paint}
+#asteria-bar{position:fixed;top:0;left:0;right:0;z-index:1000;box-sizing:border-box}
+#openmct-app{position:fixed;top:46px;left:0;right:0;bottom:0;height:auto}
+/* Open MCT assigns inline full-window bounds to its mount; reserve the host bar. */
+#openmct-app{top:46px!important;height:calc(100vh - 46px)!important}

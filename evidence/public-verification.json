@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-11-09T19:07:21.867Z",
+  "passed": true,
+  "native_wasm_frame_comparisons": 153,
+  "python_browser_guard_comparisons": 1386,
+  "deterministic_runs": 20,
+  "simulated_seconds_per_run": 1800,
+  "journal_replay_comparisons": 10,
+  "behavior_checks": [
+    "commissioning procedure",
+    "payload accumulation",
+    "duplicate command suppression",
+    "command ID conflict",
+    "stale link hides onboard state",
+    "fault recovery",
+    "save/restore parity",
+    "observer denial",
+    "input bounds"
+  ],
+  "scope": "Real C++ compiled to WebAssembly executed in Node; browser UI acceptance recorded separately."
+}

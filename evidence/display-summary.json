@@ -1,0 +1,7 @@
+{
+  "samples": 45,
+  "p95_ms": 247.81884765625,
+  "min_ms": 5.510009765625,
+  "max_ms": 257.3388671875,
+  "scope": "Same-host gateway telemetry receipt to browser requestAnimationFrame callback, one sample per fresh receipt. Includes stream scheduling; not physical display latency or RF latency. First sample may include page navigation delay."
+}

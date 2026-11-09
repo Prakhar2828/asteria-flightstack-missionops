@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-11-08T21:43:50.519707+00:00",
+  "database": "PostgreSQL 17 local test instance",
+  "checks": [
+    {
+      "name": "journal_read_parity",
+      "passed": true
+    },
+    {
+      "name": "history_parity",
+      "passed": true
+    },
+    {
+      "name": "reopen_durability",
+      "passed": true
+    },
+    {
+      "name": "cursor_excludes_prior",
+      "passed": true
+    },
+    {
+      "name": "mission_recovery_postgres",
+      "passed": true
+    },
+    {
+      "name": "command_reconciliation_postgres",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "tool": "LLVM coverage",
+  "profile_files": 215,
+  "scope": "flight/main.cpp and flight/flight.hpp only; generated F Prime/runtime code excluded",
+  "files": [
+    {
+      "file": "flight/flight.hpp",
+      "branches": {
+        "count": 210,
+        "covered": 191,
+        "notcovered": 19,
+        "percent": 90.95238095238095
+      },
+      "functions": {
+        "count": 12,
+        "covered": 12,
+        "percent": 100
+      },
+      "instantiations": {
+        "count": 12,
+        "covered": 12,
+        "percent": 100
+      },
+      "lines": {
+        "count": 232,
+        "covered": 228,
+        "percent": 98.27586206896551
+      },
+      "mcdc": {
+        "count": 0,
+        "covered": 0,
+        "notcovered": 0,
+        "percent": 0
+      },
+      "regions": {
+        "count": 272,
+        "covered": 264,
+        "notcovered": 8,
+        "percent": 97.05882352941177
+      }
+    },
+    {
+      "file": "flight/main.cpp",
+      "branches": {
+        "count": 26,
+        "covered": 22,
+        "notcovered": 4,
+        "percent": 84.61538461538461
+      },
+      "functions": {
+        "count": 1,
+        "covered": 1,
+        "percent": 100
+      },
+      "instantiations": {
+        "count": 1,
+        "covered": 1,
+        "percent": 100
+      },
+      "lines": {
+        "count": 42,
+        "covered": 37,
+        "percent": 88.09523809523809
+      },
+      "mcdc": {
+        "count": 0,
+        "covered": 0,
+        "notcovered": 0,
+        "percent": 0
+      },
+      "regions": {
+        "count": 33,
+        "covered": 30,
+        "notcovered": 3,
+        "percent": 90.9090909090909
+      }
+    }
+  ]
+}

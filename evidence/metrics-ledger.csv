@@ -1,6 +1,6 @@
-metric_id,actual,units_and_scope,evidence,status,source_sha256
-AFS-TESTS,83,cases,evidence/verification.json,V,b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa
-MODT-TESTS,82,cases,evidence/verification.json,V,b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa
-HTTP-CHECKS,30,passed / 30,evidence/http-smoke.json,V,b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa
-AFS-DETERMINISM,20,"same-seed runs, all equal=True",evidence/benchmark.json,V,b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa
-SHARED-LATENCY-P95,0.1416670000000675,ms; local gateway; n=100,evidence/latency-samples.json,V,b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa
+metric,observed,scope,evidence
+tests,199,zero failures/errors,verification.json
+gateway_p95_ms,0.5060419789515436,"100 local commands, SQLite + F Prime bridge",benchmark.json
+display_p95_ms,247.81884765625,gateway receipt to animation callback,browser-display-timing.json
+flight_repeat_runs,20,1800 simulated seconds each,benchmark.json
+ground_replays,10,complete stored journal,mission-acceptance.json

@@ -1,0 +1,6 @@
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1794232037,164354) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+EVENT: (16789504) (2:1794232037,164599) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.2]
+EVENT: (16789505) (2:1794232037,164610) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [7aae3d0-dirty]
+ASTERIA_FINAL {"protocol_version":1,"ok":true,"reason":"STEPPED","mode":"BOOT","seed":42,"telemetry":{"time":4,"battery_soc":82.0333333333,"bus_voltage":7.9688,"solar_power":12,"load_power":6,"temperature":22.015952064,"heater":0,"attitude":0.418686874304,"angular_rate":0.0967567440768,"wheel_rpm":2.24898356413,"target_angle":0,"sensor_age":0,"adcs_enabled":1,"link_connected":1,"link_age":0,"packets":4,"payload_enabled":0,"payload_data":0,"ticks":4,"missed_deadlines":0,"commands_accepted":0,"commands_rejected":0,"orbit_phase":0.000740740740741,"sunlight":1,"healthy":1,"healthy_dwell":4},"faults":[false,false,false,false,false,false],"events":[{"time":0,"code":"BOOT","severity":"INFO"}]}
+Exiting...

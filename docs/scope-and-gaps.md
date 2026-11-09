@@ -1,51 +1,17 @@
-# Scope and master-spec gap ledger
+# Local software release boundary
 
-The supplied master reference is a proposed architecture, not evidence of preexisting implementation. Release 0.1 implements a useful local engineering prototype, but **does not satisfy the entire master reference**. This ledger intentionally preserves that distinction.
+The master reference is a proposal containing targets, not an assertion that every suggested extension is required or achieved. This release implements the connected local software laboratory. Evidence and exact denominators are in the technical report.
 
-| Master item | Release 0.1 | Status |
+| Area | Delivered implementation | Deliberate boundary |
 |---|---|---|
-| Modular C++ flight software | Five subsystem state types, mode/FDIR logic, logical scheduler, local process | Implemented and tested; custom framework |
-| NASA F Prime deployment | No F Prime dependency, generated ports, topology or deployment | Not implemented |
-| F Prime test harness / GoogleTest | Python unittest drives the compiled process | Substituted, not equivalent framework experience |
-| Five subsystems | Simplified EPS, single-axis ADCS, COMMS, thermal, payload | Implemented, limited physical fidelity |
-| Four modes / six faults | Guards, SAFE entry, recovery dwell and containment | Implemented and tested |
-| 20+ channels / 12 commands | 26 shared channels, 12 flight commands + 2 lab controls | Implemented; count once across projects |
-| Forty requirements | Forty scoped prototype requirements mapped to tests | Implemented baseline; not the original full acceptance envelope |
-| 80 flight / 50 ground tests | Actual case counts in verification report | Measured; do not infer original gates complete |
-| Actual real-time scheduling / watchdog | 1 s logical scheduler and injected stall counter | Real-time/RTOS behavior not implemented |
-| Network spacecraft transport, sequence framing | Ordered child-process pipe + ground command IDs | TCP/UDP flight transport and CRC not implemented |
-| Open MCT console | Custom HTML/CSS/JavaScript console | Open MCT not implemented |
-| FastAPI/Pydantic/WebSockets | Standard-library HTTP server and explicit validation; polling | Frameworks and streaming transport not implemented |
-| PostgreSQL/TimescaleDB | SQLite WAL journal | Substituted single-host persistence |
-| Six dashboards | Telemetry filters for six groups plus specialized workspaces | Full six dedicated operations dashboards not implemented |
-| Ten flight rules / six procedures | Independent guards and executable steps | Implemented; thermal/power procedures require admin lab clearing |
-| Four scenarios | Nominal, power, COMMS, sensor paths | Core and HTTP flows tested; UI acceptance blocked |
-| Three roles | Per-session training roles with gateway enforcement | Production identity, accounts, access delegation not implemented |
-| Acknowledgments, failure, timeout | Synchronous process exchange and terminal records | Implemented; timeout path injected in tests |
-| Stored telemetry and replay | SQLite + read-only UI journal playback | Implemented; UI not visually verified |
-| 30-minute mission / 20 repeat runs | Stored 1,800 s trace and hash comparison | Measured locally |
-| Ten repeated ground mission replays | Not separately benchmarked | Open |
-| CPU/RAM/coverage/deadline profiling | Not instrumented | Open; no coverage percentage claimed |
-| Browser display latency | Not measured | Open |
-| Alert-to-display timing | Logical checks, no browser timing evidence | Open |
-| CI on Linux/macOS | Workflow prepared, local macOS tests run | Hosted CI not run; Linux results unknown |
-| Public repositories / hosting | Source and manual instructions only | Not published, per user request |
-| Demo video / screenshots | Text walkthrough | Recording and visual verification open |
-| Physical HIL / flight certification | None | Excluded from this zero-hardware prototype |
-| A2 MissionLab linkage | No project URL/artifacts supplied | Not implemented |
+| Flight architecture | Five C++ subsystem models; mode, FDIR and logical scheduling; one custom F Prime FlightComputer component | The proposed eight custom framework components were consolidated to preserve a single authoritative model; framework rate groups and services remain separate components |
+| F Prime | Pinned v4.4.2 build; 16 typed commands including lab/transport controls; 27 framework channels including mode; typed-port harness and scheduled deployment | Shared public dictionary has 26 channels and 12 operational commands; do not double-count framework controls |
+| Transport | Bounded newline frames over a local child-process pipe; generated F Prime command dispatch; IDs and terminal acknowledgments in ground audit | Operational console uses the bridge, not the separate deployment's TCP/CCSDS link; no RF, CRC-link validation or orbital latency claim |
+| Console | Six subsystem workspaces plus real Open MCT object, live and historical providers | Simplified software model; not a calibrated spacecraft digital twin |
+| Ground | FastAPI, strict Pydantic schemas, WebSockets, SQLite and PostgreSQL | Local training personas, not enterprise authentication |
+| Operations | Ten guards, six procedures, four scenario paths, command audit and after-action reports | Administrative injection/clearing is a lab facility, explicitly outside the simulated uplink |
+| Replay | Complete journal export, telemetry scrubbing, preserved 30-minute trace and ten repeated journal reads | Reconstruction of stored observations, not restart of a physical spacecraft |
+| Verification | Automated tests, requirements mapping, sanitizers, LLVM core coverage, F Prime harness, controlled load and resource profiles, browser observations | Self-verification on local macOS; no independent assurance, hardware timing or flight qualification |
+| Distribution | Local full stack plus GitHub Pages browser delivery workflow | Public demo runs C++ WebAssembly and browser operations; it does not host F Prime, FastAPI or PostgreSQL |
 
-## Fidelity and safety limits
-
-The 3U label identifies an intended educational spacecraft class, not a mechanical model or calibrated digital twin. The simplified physics cannot support engineering design decisions about real spacecraft. Orbit drawings are illustrative, the ADCS model is single-axis, temperature is lumped, and EPS has no battery chemistry. No real missions, restricted procedures, private telemetry, or proprietary code are used.
-
-The code needs independent human review before serious reuse. Passing the included tests means only the enumerated cases passed in the reported environment. It does not prove correctness, security, safety, full requirement coverage, production readiness, or qualification.
-
-## Next substantive engineering gates
-
-1. **F Prime integration:** install official tooling locally; define typed command, telemetry and event ports; wrap subsystem algorithms as real components; add topology and rate groups; prove independent framework build and tests.
-2. **Open MCT integration:** implement dictionary, real-time and historical providers against this ICD; verify quality and reconnect behavior in browser tests. Keep actual onboard authority in C++.
-3. **Service architecture:** FastAPI schema models, WebSocket stream, migrations and PostgreSQL backend, bounded retention/backpressure, schema compatibility tests and authentication if public deployment is desired.
-4. **V&V release:** actual coverage instrumentation, load curves, CPU/RAM measurements, deadline analysis, Linux build, browser automation, accessible/mobile visual checks and a recorded walkthrough.
-5. **Portfolio ownership:** review design decisions, change the implementation yourself, document defects found and fixed, and be ready to explain the model equations and tradeoffs.
-
-These are remaining implementation tasks, not accomplishments to put on a resume.
+Physical HIL, RTOS watchdog behavior, multi-axis GNC, radiation effects, hardware power/thermal calibration, A2 MissionLab coupling, production accounts and public backend hosting are outside this release. They must not appear as completed application claims. No code or testing can guarantee an interview or job offer.

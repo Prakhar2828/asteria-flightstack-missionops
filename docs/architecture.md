@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart LR
-  UI[Browser console] -->|JSON HTTP / loopback| API[Session gateway]
+  UI[Browser console] -->|HTTP + WebSocket / loopback| API[Session gateway]
   API --> RULES[Ground flight rules]
   RULES -->|ASCII command frame| AFS[C++ flight process]
   AFS --> EPS[EPS model]
@@ -13,10 +13,10 @@ flowchart LR
   AFS --> COM[COMMS model]
   AFS --> PAY[Payload model]
   AFS -->|Version 1 JSON snapshot| API
-  API --> DB[(SQLite append-only journal)]
+  API --> DB[(SQLite or PostgreSQL journal)]
   DB --> REPLAY[Read-only replay and debrief]
   REPLAY --> UI
-  API -->|Polling responses| UI
+  API -->|WebSocket snapshots + HTTP fallback| UI
 ```
 
 Each session has an isolated child process and simulation seed. The browser never edits the flight state. A command first passes schema and role checks, then ground flight rules, then onboard acceptance. The C++ process owns physical state and fault protection. Administrative fault injections are explicitly local lab controls that bypass the simulated radio link, not operational uplink commands.
@@ -53,3 +53,13 @@ SQLite WAL persists run metadata, telemetry received over the simulated link, re
 4. Fixed-step deterministic simulation: identical same-seed runs on the measured host; floating-point equivalence across architectures is not assumed.
 5. No AI in flight decisions: all authority belongs to deterministic rules and explicit operator actions.
 6. No framework branding: F Prime/Open MCT remain unimplemented until real adapters, builds, and tests exist.
+
+## Framework integration and process boundaries
+
+The F Prime FlightComputer component owns the same model used by the standalone executable. Generated FPP command decoding routes through the model's guards; connected typed ports publish 26 scalar channels plus mode and terminal command responses. The Bridge exposes this generated dispatch to isolated MissionOps sessions. The separate AsteriaDeployment wires FlightComputer to F Prime command, telemetry, event and 1 Hz scheduling services. These are two execution modes; the console does not pretend to exercise the deployment's TCP/CCSDS transport.
+
+One wrapper is deliberate: five logical subsystem models share tightly coupled state, while FDIR observes the complete spacecraft atomically. This revises the proposal's eight-component target. Further decomposition would require an explicit synchronization/state-ownership design.
+
+The gateway uses strict Pydantic schemas and a monotonic scheduler. Each session has one child process and lock; the service caps active sessions at eight. WebSocket sends are bounded by a timeout and do not accumulate an unbounded outbound queue. The journal is append-only through this API; it is not a tamper-proof ledger. HTTP exports freeze an upper record ID, then page records to avoid silently truncating an active mission.
+
+Open MCT uses UTC-projected simulation time (mission epoch plus elapsed simulation seconds), with a `utc` domain key matching its time system. Live updates and historical data share the same channel identifiers. The custom console retains guarded controls, procedural recovery and debrief generation.

@@ -1,8 +1,11 @@
 {
-  "timestamp_utc": "2026-11-08T16:41:33.257597+00:00",
-  "javascript_syntax": "passed: node --check",
-  "dom_references": 37,
-  "missing_dom_ids": [],
-  "external_script_or_stylesheet_assets": false,
-  "browser_visual_qa": "BLOCKED: in-app browser and native Chrome CUA calls timed out; no screenshots or interaction results obtained."
+  "timestamp_utc": "2026-11-09T13:46:22.086338+00:00",
+  "javascript_syntax": {
+    "files": [
+      "web/app.js",
+      "web/openmct-adapter.js"
+    ],
+    "passed": true
+  },
+  "browser_evidence": "browser-acceptance.json"
 }

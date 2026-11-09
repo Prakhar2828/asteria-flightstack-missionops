@@ -1,38 +1,44 @@
-# Local verification report — release 0.1
+# Local verification report
 
-Generated from machine-readable evidence. Values are actual observations on one local machine, not targets.
+These are observed results on `macOS-26.6-arm64-arm-64bit`. They are not design targets, flight guarantees or independent certification.
 
-| Measure | Observed result | Evidence |
+| Check | Observed result | Raw evidence |
 |---|---|---|
-| Test cases | 165 run; 0 failures; 0 errors | `evidence/verification.json`, `test-output.txt` |
-| Flight process cases | 83 | Names begin `test_flight` |
-| Ground cases | 82 | Names begin `test_ground` |
-| HTTP acceptance checks | 30/30 | `evidence/http-smoke.json` |
-| Sanitizer exercise | Passed, 47 input/response frames | `evidence/sanitizers.json` |
-| Repeated scenario | 20 runs × 1800 simulated seconds | `evidence/benchmark.json` |
-| Repeat trace equality | True | 20 complete trace SHA-256 hashes |
-| Scripted pointing commands | 100/100 acknowledged | `evidence/latency-samples.json` |
-| Reconciliation including BOOT | 101/101 request IDs have terminal records | `evidence/benchmark.json` |
-| Local gateway latency p95 | 0.1417 ms, nearest rank, n=100 | Raw latency samples |
-| Channels | 26, shared once across both projects | `docs/telemetry-dictionary.json` |
-| Flight / lab commands | 12 / 2 | `ground/core.py`, ICD |
+| Automated suite | 199 cases; 0 failures; 0 errors | verification.json, test-output.txt |
+| Flight / ground / API cases | 83 / 82 / 34 | Individually named cases |
+| Scoped requirements | 40 flight + 20 ground, mapped to actual results | docs/verification-matrix.csv |
+| HTTP acceptance | 30/30 | http-smoke.json |
+| F Prime command parity | 171 frames across 3 seeds and all 6 faults | fprime.json |
+| Typed-port harness | 48708 channel samples; malformed/terminal-response checks passed | fprime.json |
+| Real scheduled deployment | 4 ticks in a five-second launch, clean shutdown | fprime-deployment-log.txt |
+| Deterministic flight runs | 20 × 1800 simulated seconds; identical hashes: True | benchmark.json, mission-trace.jsonl |
+| Ground replay | 10 identical reads of 1826 complete journal rows over 1,800 simulated seconds | mission-acceptance.json, ground-mission.jsonl |
+| Scenario acceptance | 4 nominal/anomaly workflows passed | scenario-*.json |
+| Command reconciliation | 101/101 requests including BOOT have terminal records | benchmark.json |
+| Gateway acknowledgment p95 | 0.506 ms, n=100 | latency-samples.json |
+| Browser receipt-to-animation p95 | 247.82 ms, n=45 fresh receipts | browser-display-timing.json |
+| Sanitizers | Passed: True; 47 frames | sanitizers.json |
+| Isolated flight peak resident memory | 1840 KiB | runtime-profile.json |
+| Isolated flight CPU | 0.0904 s user + 0.0070 s system for 20,000 logical steps | runtime-profile.json |
+| Ground scheduling | 6 samples with 8 active sessions; 0 work-budget overruns | runtime-profile.json |
+| PostgreSQL | Six adapter/durability/mission checks passed on local PostgreSQL 17 | postgresql.json |
+| Browser checks | Six dashboards, Open MCT plot, procedure acknowledgments, replay/debrief, stale-link recovery, 390px layout | browser-acceptance.json, screenshots/ |
 
-Environment: `macOS-26.6-arm64-arm-64bit`. Python: `3.9.6 (default, May 22 2026, 11:13:45) `. Test timestamp: `2026-11-08T16:41:06.856716+00:00`.
+## Instrumented core coverage
 
-Verified source SHA-256: `b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa`. The digest covers sorted paths and contents under flight, ground, web, tests, and scripts, excluding Python caches. It is not a Git commit SHA: no repository has been initialized or pushed. Benchmark and HTTP timestamps are stored in their own reports.
+- `flight/flight.hpp`: 228/232 instrumented lines; 191/210 branches (90.95%).
+- `flight/main.cpp`: 37/42 instrumented lines; 22/26 branches (84.62%).
 
-## What the tests establish
+Coverage excludes generated F Prime code, its framework, Python and browser code. It is not MC/DC or exhaustive input-space coverage. HTML source reports are in `evidence/coverage-html/`.
 
-The enumerated suite checks protocol parsing/bounds, all selected transition pairs, six fault categories, protection and recovery, seeded traces, command/resource guards, the role-by-command permission matrix, command ID reconciliation, timeout/failure handling, procedure progression, and journal round trips. Parameterized cases are reported individually. Counts do not mean unique requirements, full branch coverage, or exhaustive safety verification.
+## Measurement boundaries
 
-The independent benchmark repeats one fixed-seed 30-minute scenario with sensor injection and recovery. Identical hashes establish repeatability for that configuration on the measured environment. Cross-platform bitwise determinism is not claimed.
+Gateway latency includes local process exchange and journal writes. Browser timing uses the same host wall clock from fresh gateway telemetry receipt to a requestAnimationFrame callback; it includes stream scheduling, but is not physical pixel presentation or RF latency. The first sample can include initialization/navigation time. Samples are retained without deleting outliers. The browser test used a single active mission at 1× with a 4 Hz stream.
 
-## Verification limits
+Paced load profiles at 1, 10 and 100 commands/second are in mission-acceptance.json, including every latency and sampled memory observation. Isolated CPU/peak RSS is measured separately. The short eight-session scheduler run cannot establish hard real-time behavior. Injected watchdog telemetry is logical fault behavior, distinct from host scheduling measurements.
 
-- Browser automation failed before the page could be inspected. **Visual layout, actual browser interactions, mobile layout, keyboard accessibility, and browser display latency remain unverified.** HTTP checks establish API behavior and asset delivery only. JavaScript parsing was checked separately.
-- The C++ binary was compiled with strict warnings; the sanitizer run exercises 47 frames and six faults, not the entire exhaustive input space.
-- Latency is local Python-to-C++ gateway acknowledgment latency including SQLite writes. It excludes HTTP/browser time and radio propagation. It is not a real-time guarantee or a flight performance claim.
-- Coverage, CPU, peak memory and actual host scheduling deadlines were not measured.
-- The GitHub Actions workflow is prepared but has not run. Linux support is intended, not verified here.
-- F Prime, Open MCT and the other gaps in `scope-and-gaps.md` remain unimplemented.
-- This is self-verification of an AI-assisted prototype, not an independent review or certification.
+Twenty identical traces cover one deterministic scenario on one host. Ten replay passes reconstruct all saved records; they do not prove that every possible mission is deterministic. All four stored scenario traces passed their defined expected outcomes. The database journal is not tamper-proof.
+
+GitHub Actions is prepared but has not been run by this local task. Linux, public hosting, physical hardware, production authentication, independent review and flight qualification are not claimed. The console exercises the F Prime bridge; the scheduled deployment's TCP/CCSDS path is not part of this evidence.
+
+Verification source digest: `784b25307f18c652419b5a0be6a155b527ef58285f2749e586802e557685bb3d`. It covers source under flight, ground, web, tests, scripts and integrations, excluding caches, external framework source and generated builds. Evidence scripts may have their own run timestamps.

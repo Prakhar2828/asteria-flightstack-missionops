@@ -6,3 +6,16 @@ __pycache__/
 .env
 .venv/
 *.sqlite3*
+
+# Reproducible external framework and generated native artifacts
+integrations/fprime/lib/
+integrations/fprime/build-*/
+*.template.cpp
+*.template.hpp
+*.profraw
+*.profdata
+
+.venv-fprime/
+
+# Rebuilt browser distribution
+/dist/

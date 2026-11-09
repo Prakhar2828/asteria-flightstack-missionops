@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-11-08T16:41:08.933585+00:00",
+  "timestamp_utc": "2026-11-09T02:53:32.018563+00:00",
   "environment": "macOS-26.6-arm64-arm-64bit",
   "processor": "arm64",
   "seed": 42,
@@ -33,12 +33,12 @@
   "reconciled_requests": 101,
   "total_requests_including_boot": 101,
   "gateway_latency_ms": {
-    "minimum": 0.06754099999994878,
-    "median": 0.09991700000000492,
-    "p95_nearest_rank": 0.1416670000000675,
-    "maximum": 2.4768330000000116
+    "minimum": 0.1640000264160335,
+    "median": 0.4009165277238935,
+    "p95_nearest_rank": 0.5060419789515436,
+    "maximum": 0.6785420118831098
   },
-  "benchmark_wall_seconds": 1.227738042,
+  "benchmark_wall_seconds": 1.2659986249636859,
   "limits": [
     "Gateway latency includes SQLite audit writes and C++ process exchange. Excludes HTTP, UI display and RF latency.",
     "CPU, peak memory and host scheduling deadlines not instrumented in this report.",

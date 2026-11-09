@@ -1,9 +1,9 @@
 # MissionOps Digital Twin
 
-The ground half of the Asteria laboratory. `core.py` owns the local flight process gateway, independent command guards, immutable journal inserts, session state, and executable procedures. `server.py` exposes a loopback-only HTTP interface and advances running simulations.
+The local FastAPI service connects an isolated spacecraft process to an operations console and NASA Open MCT. Start through `run.command` at repository root. See the root README for setup and backend selection.
 
-Run from the repository root: `python3 ground/server.py`. The server builds FlightStack if no binary exists; use `python3 scripts/build.py` after source changes. The **MissionOps**, **Replay & debrief**, and overview workspaces are its interactive front end.
+`api.py` owns HTTP/WebSocket boundaries and schemas. `runtime.py` owns session limits and monotonic scheduling. `core.py` owns command lifecycle, independent ground guards, six procedures and audit reconciliation. `storage.py` implements SQLite/PostgreSQL journal parity.
 
-SQLite files live in `data/` and are excluded from Git. Journal writes are append-only through the application, but the database is not tamper-proof. Role selection is a training feature: any local visitor can start an administrator session. Do not interpret this as production authentication.
+Three roles are selectable training personas. Observer mutation attempts are rejected at the server. Command IDs suppress duplicate execution within a live run, and every accepted request is associated with a terminal result or explicit transport failure. No browser control can directly edit authoritative spacecraft state.
 
-A single integrated repository is recommended for the initial public release: both halves share one interface version, test suite, and evidence package. They remain distinct portfolio projects; do not double-count shared channels or commands.
+The six subsystem workspaces and Open MCT live/history adapter consume the same 26-channel dictionary. Exported journals preserve commands, telemetry, procedures and operator actions; replay is read-only. All runtime assets are local. This service is intended for loopback use, with production account management and public deployment outside its scope.

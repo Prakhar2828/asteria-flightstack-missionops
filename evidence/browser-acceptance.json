@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-09T13:43:54.107Z",
+  "dashboards": [
+    {
+      "name": "Electrical power",
+      "visible": true
+    },
+    {
+      "name": "Thermal control",
+      "visible": true
+    },
+    {
+      "name": "Attitude & sensors",
+      "visible": true
+    },
+    {
+      "name": "Communications",
+      "visible": true
+    },
+    {
+      "name": "Payload operations",
+      "visible": true
+    },
+    {
+      "name": "Scheduler & events",
+      "visible": true
+    }
+  ],
+  "checks": [
+    "Commissioning three-step procedure acknowledged (prior session)",
+    "F Prime-backed command acknowledgments (prior session)",
+    "Open MCT live and historical battery plot",
+    "No console errors in final Open MCT view",
+    "Telemetry replay slider reached latest saved sample",
+    "After-action report generated",
+    "Communications fault changed quality to STALE",
+    "Clear fault restored LIVE with onboard SAFE",
+    "390px viewport has no document horizontal overflow",
+    "Browser receipt-to-animation timing exported"
+  ],
+  "scope": "Observed local browser workflows, not exhaustive accessibility or cross-browser certification"
+}

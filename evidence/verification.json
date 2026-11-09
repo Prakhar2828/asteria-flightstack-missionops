@@ -1,14 +1,150 @@
 {
   "schema": "asteria-verification-v1",
-  "timestamp_utc": "2026-11-08T16:41:06.856716+00:00",
+  "timestamp_utc": "2026-11-09T13:47:26.832808+00:00",
   "environment": "macOS-26.6-arm64-arm-64bit",
-  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
-  "source_sha256": "b8c9f966d63d56854a2f5c780d886e404e2f5e45e3725912383e944db9a2abaa",
-  "tests_run": 165,
+  "python": "3.11.17 (main, Oct 13 2026, 16:38:53) [Clang 21.1.8 ]",
+  "source_sha256": "784b25307f18c652419b5a0be6a155b527ef58285f2749e586802e557685bb3d",
+  "tests_run": 199,
   "failures": 0,
   "errors": 0,
-  "elapsed_seconds": 1.319609208,
+  "elapsed_seconds": 1.9699381249956787,
   "cases": [
+    {
+      "id": "test_api.ApiTests.test_body_limit",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_bool_parameter",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_close_revokes",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_command_ack",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_command_conflict",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_command_duplicate",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_export_valid_json",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_forged_token",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_history",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_history_range",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_history_unknown",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_host",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_missing_auth",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_nonfinite",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_openmct_page",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_openmct_runtime_policy_is_scoped",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_origin",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_pagination",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_procedure_ambiguous",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_procedure_completed",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_raw_token_not_bearer",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_role_denied",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_schema_export",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_session_limit",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_session_seed_bound",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_speed_bounds",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_step_bounds",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_stream_matches_command",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_stream_sequence",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_string_seed",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_telemetry_receipt_timestamp",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_unknown_session_field",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_vendor_served",
+      "status": "passed"
+    },
+    {
+      "id": "test_api.ApiTests.test_wrong_content_type",
+      "status": "passed"
+    },
     {
       "id": "test_flight.FlightTests.test_adcs_off_payload",
       "status": "passed"

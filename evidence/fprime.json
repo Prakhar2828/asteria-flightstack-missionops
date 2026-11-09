@@ -1,0 +1,32 @@
+{
+  "invalid_frame_parity": true,
+  "typed_port_harness": {
+    "passed": true,
+    "scheduled_ticks": 1801,
+    "telemetry_samples": 48708,
+    "terminal_responses": 4
+  },
+  "real_scheduler_ticks_in_five_seconds": 4,
+  "framework": "F Prime v4.4.2",
+  "framework_commit": "f22ce8f2f2943e641d454e9daa7f129e6c878d32",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "passed": true,
+  "runs": [
+    {
+      "seed": 0,
+      "frames_compared": 57,
+      "sha256": "4fc4283183c8e14f92717574a0ad72473056e50fb9d43138ccdf91b41d700cbd"
+    },
+    {
+      "seed": 42,
+      "frames_compared": 57,
+      "sha256": "d659881275363fafa2344e2d6ff78df8f61c0b5fa3e4629632a49a8cd586116a"
+    },
+    {
+      "seed": 4294967295,
+      "frames_compared": 57,
+      "sha256": "5484c16cd7013f1d256d26d393c7fc66eae20729947e95bf96bfcdadbd54b29b"
+    }
+  ],
+  "scope": "Generated typed command dispatch parity, all six faults; standalone bridge, not the TCP ground link."
+}

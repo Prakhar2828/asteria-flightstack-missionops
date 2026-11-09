@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+import {BrowserMission,guard} from '../public-demo/runtime-core.mjs';
+const require=createRequire(import.meta.url);
+const createAsteria=require('../dist/flight-wasm.js');
+const module=await createAsteria({wasmBinary:fs.readFileSync('dist/flight-wasm.wasm')});
+const engine={reset:module.cwrap('reset_flight',null,['number']),exchange:(cmd,val)=>JSON.parse(module.ccall('exchange_flight','string',['string','number'],[cmd,val]))};
+const catalog=JSON.parse(fs.readFileSync('dist/catalog.json'));
+const fixtures=JSON.parse(fs.readFileSync('build/public-fixtures.json'));
+let compared=0;
+for(const run of fixtures.frames){engine.reset(run.seed);for(let i=0;i<run.commands.length;i++){assert.deepEqual(engine.exchange(...run.commands[i]),run.expected[i]);compared++;}}
+for(const c of fixtures.guards)assert.equal(guard(c.role,c.command,c.value,c.state,catalog.commands),c.expected);
+let m=new BrowserMission(engine,catalog);let id=0;const cmd=(command,value=0)=>m.command({id:'command-'+(++id),command,value});
+m.startProcedure('commission');for(let i=0;i<3;i++)m.advanceProcedure();assert.equal(m.procedure.complete,true);m.step(10);assert.equal(m.truth.telemetry.payload_data,2.5);
+let r=cmd('POINT',12);const count=m.truth.telemetry.commands_accepted;
+assert.equal(m.command({id:r.id,command:'POINT',value:12}).duplicate,true);assert.equal(m.truth.telemetry.commands_accepted,count);
+assert.equal(m.command({id:r.id,command:'POINT',value:13}).reason,'FR-03_ID_CONFLICT');
+cmd('INJECT_FAULT',3);m.step(20);assert.equal(m.status().quality,'STALE');assert.equal(m.truth.mode,'SAFE');assert.notEqual(m.received.telemetry.time,m.truth.telemetry.time);
+cmd('CLEAR_FAULTS');m.step(10);assert.equal(cmd('RECOVER').status,'acknowledged');assert.equal(cmd('RESUME').status,'acknowledged');
+const saved=JSON.parse(JSON.stringify(m.save())),trace=m.export(),truth=m.truth;
+m=BrowserMission.restore(engine,catalog,saved);assert.deepEqual(m.truth,truth);assert.deepEqual(m.export(),trace);
+for(let i=0;i<10;i++)assert.deepEqual(m.export(),trace);
+m=new BrowserMission(engine,catalog,42,'observer');assert.equal(cmd('BOOT').reason,'FR-01_ROLE_DENIED');assert.throws(()=>m.startProcedure('commission'),/ROLE_DENIED/);
+assert.throws(()=>m.step(3601));assert.throws(()=>new BrowserMission(engine,catalog,-1));
+let hashes=[];
+for(let run=0;run<20;run++){engine.reset(42);engine.exchange('BOOT',0);hashes.push(JSON.stringify(engine.exchange('STEP',1800)));}
+assert.equal(new Set(hashes).size,1);
+const report={timestamp_utc:new Date().toISOString(),passed:true,native_wasm_frame_comparisons:compared,python_browser_guard_comparisons:fixtures.guards.length,deterministic_runs:20,simulated_seconds_per_run:1800,journal_replay_comparisons:10,behavior_checks:['commissioning procedure','payload accumulation','duplicate command suppression','command ID conflict','stale link hides onboard state','fault recovery','save/restore parity','observer denial','input bounds'],scope:'Real C++ compiled to WebAssembly executed in Node; browser UI acceptance recorded separately.'};
+fs.writeFileSync('evidence/public-verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
