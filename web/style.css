@@ -3,3 +3,72 @@
 .openmct-link{display:block;text-decoration:none}.dashboard-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.dashboard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.dashboard-card{background:#0b141a;border:1px solid var(--line);padding:16px}.dashboard-card small,.dashboard-card strong,.dashboard-card span{display:block}.dashboard-card small{color:var(--muted);font-size:10px}.dashboard-card strong{font:22px var(--mono);margin:12px 0}.dashboard-card span{font-size:9px}@media(max-width:700px){.dashboard-grid{grid-template-columns:1fr 1fr}}
 
 .dashboard-card canvas{display:block;width:100%;height:44px;margin-top:12px}
+
+/* Console shell and instrument surfaces */
+:root {
+  --bg: #10151a;
+  --panel: #171d23;
+  --line: #384149;
+  --muted: #b2bec7;
+  --teal: #8dddc9;
+}
+body { font-size: 1rem; }
+.sidebar { width: 206px; padding: 26px 12px; background: #12181d; }
+.brand { padding-left: 14px; border-left: 3px solid var(--teal); line-height: 1.25; }
+.brand small { margin-top: 5px; font: .75rem var(--mono); letter-spacing: .07em; }
+.nav-label { margin: 36px 12px 8px; font: .75rem var(--mono); }
+.nav { display: block; border-radius: 0; padding: 10px 12px; font-size: .94rem; }
+.nav.active { box-shadow: inset 3px 0 var(--teal); background: #20312f; }
+.sidebar-bottom { display: grid; gap: 12px; }
+.lab-badge, .sidebar-bottom small { font: .75rem/1.5 var(--mono); }
+main { margin-left: 206px; min-width: 0; }
+header { height: 48px; padding: 0 24px; background: #12181d; }
+.workspace { padding: 20px 24px 0; }
+.hero { margin-bottom: 16px; }
+h1, .hero h1 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); font-weight: 600; letter-spacing: -.035em; margin: 0 0 4px; }
+.hero p, .connection p, p.muted, label, .callout, .empty, .scenario small { font-size: .875rem; }
+.panel, .metric, .scenario, .button, input, select, .pill { border-radius: 2px; }
+.panel { padding: 16px; margin-bottom: 14px; }
+.panel-heading { margin-bottom: 12px; flex-wrap: wrap; }
+.panel-heading h2, h2 { font-size: 1.05rem; font-weight: 600; }
+.connection { border-color: var(--line); border-top: 2px solid var(--teal); }
+.button, .small, .transport select, .fault, .procedure-step, .health-row small, .gate, td { font-size: .875rem; }
+.button { color: #101c1b; }
+.mission-strip { background: #192128; margin-bottom: 14px; padding: 10px 14px; flex-wrap: wrap; }
+.mission-strip strong, .metric strong { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.metric small, .tag, .pill, .eyebrow, .simulation, .mission-strip small, .scenario span, .metric p, th, .dashboard-card small, .dashboard-card span, .event, .orbit-footer { font-size: .75rem; letter-spacing: .025em; }
+.tag { white-space: normal; }
+.metrics, .grid-half, .grid-main { gap: 12px; }
+.metrics { margin-bottom: 14px; }
+.metric { padding: 11px 13px; border-top: 2px solid #687d89; }
+.metric > div { margin-top: 4px; }
+.metric canvas { height: 30px; margin: 4px 0; }
+.metric b { float: none; margin-left: 4px; }
+.scenario-grid, .dashboard-grid { gap: 6px; }
+.scenario { padding: 10px 12px; }
+.scenario strong { margin: 2px 0; }
+.dashboard-tabs { gap: 4px; margin-bottom: 12px; }
+.dashboard-tabs [aria-pressed="true"] { border-color: var(--teal); color: var(--teal); background: #20312f; }
+.orbital { background: var(--panel); }
+#orbit { height: 200px; }
+th { position: sticky; top: 0; background: var(--panel); }
+:focus-visible { outline: 2px solid #99d6ff; outline-offset: 2px; }
+.skip { position: absolute; left: 8px; top: -80px; z-index: 10; padding: 8px; background: white; color: black; }
+.skip:focus { top: 8px; }
+@media (max-width: 850px) {
+  .sidebar { position: static; width: auto; padding: 12px 16px 0; }
+  .sidebar nav { padding-bottom: 4px; }
+  .nav { width: auto; flex-shrink: 0; }
+  main { margin: 0; }
+  .sidebar-bottom { display: none; }
+  .grid-half, .grid-main { gap: 0; }
+  .workspace { padding: 16px 12px 0; }
+}
+@media (max-width: 480px) {
+  .mission-strip { gap: 12px; }
+  .dashboard-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .dashboard-card { padding: 10px; overflow-wrap: anywhere; }
+  .event { grid-template-columns: auto minmax(0,1fr); overflow-wrap: anywhere; }
+  .metrics { gap: 6px; }
+}
+.reference-link { color: var(--teal); }
