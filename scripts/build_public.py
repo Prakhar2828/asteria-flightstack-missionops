@@ -70,7 +70,7 @@ def main():
             )
             s = (
                 s.replace("Python operations gateway", "Browser operations adapter")
-                .replace("C++17 onboard core", "C++17 · WebAssembly")
+                .replace("C++ onboard core", "C++ · WebAssembly")
                 .replace("Local · no external services", "Free public interactive demo")
             )
             s = s.replace(
