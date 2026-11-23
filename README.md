@@ -8,14 +8,14 @@ A local spacecraft software laboratory: command a simulated CubeSat, inject a fa
 
 Two connected portfolio projects share one spacecraft model and interface:
 
-- **FlightStack:** C++17 subsystem models, mode management and fault protection, integrated with a real NASA F Prime component, typed command/telemetry ports and scheduled deployment.
+- **FlightStack:** C++ subsystem models, mode management and fault protection, integrated with a real NASA F Prime component, typed command/telemetry ports and scheduled deployment.
 - **MissionOps:** FastAPI/Pydantic gateway, WebSocket telemetry, NASA Open MCT live/history views, six subsystem dashboards, ten flight rules, six executable procedures, three training roles, SQLite/PostgreSQL journals, replay and debrief exports.
 
 All data is synthetic. The model is educational, with a single attitude axis, lumped thermal behavior and simplified power dynamics. This is independent software, not flight-qualified software or a NASA-endorsed product.
 
 ## Run locally
 
-Requires macOS or Linux, Python 3.11+, a C++17 compiler and Git. Dependency installation needs an Internet connection once. Runtime uses local assets and requires no account, API key or paid service.
+Requires macOS or Linux, Python 3.11+, a C++ compiler and Git. Dependency installation needs an Internet connection once. Runtime uses local assets and requires no account, API key or paid service.
 
 ```sh
 python3.11 scripts/setup.py

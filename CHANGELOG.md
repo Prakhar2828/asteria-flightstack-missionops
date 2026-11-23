@@ -2,7 +2,7 @@
 
 ## 0.1.0 — 2026-11-08
 
-- Added standalone C++17 spacecraft simulation, bounded command framing, five subsystem models, four modes, independent onboard command guards and six fault sources.
+- Added standalone C++ spacecraft simulation, bounded command framing, five subsystem models, four modes, independent onboard command guards and six fault sources.
 - Added Python ground rules, per-session training roles, idempotent commands, terminal outcomes, guarded procedures and SQLite journal.
 - Added interactive local web console, telemetry trends, illustrative orbit, subsystem filters, fault bench, procedure runner, audit, replay and export.
 - Added tests, source-digest verification reports, a deterministic benchmark, sanitizer exercise, HTTP acceptance checks and manual GitHub instructions.

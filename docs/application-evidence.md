@@ -4,7 +4,7 @@ Use measured claims from `technical-report.md`, not the original proposal's targ
 
 Suitable project descriptions after reviewing and reproducing the work:
 
-- **Asteria FlightStack:** Developed an AI-assisted C++17 spacecraft software testbed with five simplified subsystem models, four operating modes and six injected fault classes; integrated a typed NASA F Prime component and scheduled deployment, with command-dispatch parity tests and instrumented core coverage.
+- **Asteria FlightStack:** Developed an AI-assisted C++ spacecraft software testbed with five simplified subsystem models, four operating modes and six injected fault classes; integrated a typed NASA F Prime component and scheduled deployment, with command-dispatch parity tests and instrumented core coverage.
 - **MissionOps:** Built a local FastAPI/Open MCT operations environment with WebSocket telemetry, six subsystem workspaces, independent command guards, executable recovery procedures, SQLite/PostgreSQL audit storage and deterministic recorded-mission replay.
 
 Attach the measured test count, p95 latency and coverage denominator only from the current report. Explain that gateway, browser and simulated-time measurements cover different intervals. The evidence folder contains raw traces and scripts so a reviewer can reproduce the results.

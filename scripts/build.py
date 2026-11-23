@@ -10,7 +10,7 @@ def build(sanitize=False):
     compiler = shutil.which("clang++") or shutil.which("g++")
     if not compiler:
         raise SystemExit(
-            "Install a C++17 compiler: Xcode Command Line Tools on macOS or g++ on Linux."
+            "Install a C++ compiler: Xcode Command Line Tools on macOS or g++ on Linux."
         )
     (ROOT / "build").mkdir(exist_ok=True)
     target = ROOT / "build" / ("flight-sanitized" if sanitize else "flight")
